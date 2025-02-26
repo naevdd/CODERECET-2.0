@@ -30,35 +30,35 @@ const countdown = () => {
     
     return (
         <div className='bg-custom-black h-screen'>
-            <div className='w-full gap-24 flex flex-col'>
-                <div className='mt-64 px-64'>
+            <div className='w-full gap-20 flex flex-col'>
+                <div className='lg:mt-64 mt-24 lg:px-64 px-12'>
                     <h1 className='font-satoshi_v text-white text-center 
-                    text-5xl'>
+                    lg:text-5xl text-xl'>
                         Build innovative products and challenge conventional
                         ideas in this 36-hour hackathon
                     </h1>
                 </div>
                 <div className='bg-custom-yellow flex justify-center items-center rounded-xl
-                 mx-auto w-9/12 text-black h-72'>
-                <div className="flex space-x-9 mb-10 text-[200px] font-bebas_neue">
+                 mx-auto w-9/12 text-black h-80 lg:h-72'>
+                <div className="flex lg:flex-row flex-col lg:space-x-9 lg:space-y-0 space-y-4 lg:mb-10 text-5xl lg:text-[200px] font-bebas_neue">
                     <div className="text-center">
                     <span>{timeLeft.days}</span>
-                    <div className="text-2xl -mt-14 font-satoshi_v">DAYS</div>
+                    <div className="lg:text-2xl text-xs lg:-mt-6 font-satoshi_v">DAYS</div>
                     </div>
-                    <span>:</span>
+                    <span className='sm:block hidden'>:</span>
                     <div className="text-center">
                     <span>{timeLeft.hours}</span>
-                    <div className="text-2xl -mt-14 font-satoshi_v">HOURS</div>
+                    <div className="lg:text-2xl text-xs lg:-mt-6 font-satoshi_v">HOURS</div>
                     </div>
-                    <span>:</span>
+                    <span className='sm:block hidden'>:</span>
                     <div className="text-center">
                     <span>{timeLeft.minutes}</span>
-                    <div className="text-2xl -mt-14 font-satoshi_v">MINUTES</div>
+                    <div className="lg:text-2xl text-xs lg:-mt-6 font-satoshi_v">MINUTES</div>
                     </div>
-                    <span>:</span>
+                    <span className='sm:block hidden'>:</span>
                     <div className="text-center">
                     <span>{timeLeft.seconds}</span>
-                    <div className="text-2xl -mt-14 font-satoshi_v">SECONDS</div>
+                    <div className="lg:text-2xl text-xs lg:-mt-6 font-satoshi_v">SECONDS</div>
                     </div>
                 </div>
                 </div>
