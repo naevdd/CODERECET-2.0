@@ -44,7 +44,7 @@ function LandingPage() {
             </div>
             <div className='flex flex-col items-center'>
                 <h1 className='text-white mt-24 font-seasons_r text-8xl text-center
-                '>CET'S BIGGEST <br></br> <span className='text-custom-yellow'>HACKATHON</span> IS BACK.</h1>
+                '>CET<span className='font-satoshi_v'>'</span>S BIGGEST <br></br> <span className='text-custom-yellow'>HACKATHON</span> IS BACK.</h1>
                 <button className='bg-custom-yellow border-2 mt-5 z-40 border-white w-48 h-12 rounded-full'>
                     <p className='text-white text-center font-satoshi_v text-xl'>REGISTER NOW</p>
                 </button>
