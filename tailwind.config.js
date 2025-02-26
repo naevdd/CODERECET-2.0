@@ -5,6 +5,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        "custom-black":'#0A0A0A',
+        'custom-yellow': '#C88D28',
+        'custom-white': '#E6E6FA',
+        'custom-gray':'#9C9C9C'
+      },
       fontFamily: {
       seasons_r:['Seasons_r'],
       satoshi_v:['Satoshi_v'],

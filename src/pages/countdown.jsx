@@ -29,7 +29,7 @@ const countdown = () => {
       }, []);
     
     return (
-        <div className='bg-black h-screen'>
+        <div className='bg-custom-black h-screen'>
             <div className='w-full gap-24 flex flex-col'>
                 <div className='mt-64 px-64'>
                     <h1 className='font-satoshi_v text-white text-center 
@@ -38,7 +38,7 @@ const countdown = () => {
                         ideas in this 36-hour hackathon
                     </h1>
                 </div>
-                <div className='bg-yellow-600 flex justify-center items-center rounded-xl
+                <div className='bg-custom-yellow flex justify-center items-center rounded-xl
                  mx-auto w-9/12 text-black h-72'>
                 <div className="flex space-x-9 mb-10 text-[200px] font-bebas_neue">
                     <div className="text-center">
