@@ -79,7 +79,7 @@ function LandingPage() {
             <div className='flex flex-col items-center'>
                 <h1 className='text-white z-10 lg:mt-24 mt-20 font-seasons_r text-5xl lg:text-8xl text-center
                 '>CET<span className='font-satoshi_v'>'</span>S BIGGEST <br></br> <span className='text-custom-yellow'>HACKATHON</span> IS BACK.</h1>
-                <button className='bg-custom-yellow border-2 mt-5 z-0 border-white w-36 h-10 lg:w-48 lg:h-12 rounded-full'>
+                <button className='bg-custom-yellow border-2 mt-5 z-30 border-white w-36 h-10 lg:w-48 lg:h-12 rounded-full'>
                     <p className='text-white text-center font-satoshi_v lg:text-xl'>REGISTER NOW</p>
                 </button>
                 <img className='lg:-mt-48 -mt-20 z-20' src={gif} width={748} height={748}/>
