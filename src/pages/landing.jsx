@@ -83,7 +83,7 @@ function LandingPage() {
                     <p className='text-white text-center font-satoshi_v lg:text-xl'>REGISTER NOW</p>
                 </button>
                 <img className='lg:-mt-48 -mt-20 z-20' src={gif} width={748} height={748}/>
-                <div className='lg:h-20 -mt-16 lg:-mt-[18rem] w-full z-10 bg-custom-black inline-flex flex-nowrap border-2 border-l-0 border-r-0 border-custom-gray'>
+                <div className='lg:h-20 absolute bottom-0 -mt-16 lg:-mt-[18rem] w-full z-10 bg-custom-black inline-flex flex-nowrap border-2 border-l-0 border-r-0 border-custom-gray'>
                 <div className="overflow-hidden relative">
                 <div className="flex animate-infinite-scroll space-x-16 sm:space-x-36 p-2">
                 {words.concat(words).map((word, index) => (
