@@ -1,6 +1,7 @@
 import LandingPage from "./pages/landing"
 import Countdown from "./pages/countdown"
 import Prize from "./pages/prize"
+import Footer from "./pages/Footer"
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
     <LandingPage/>
     <Countdown/>
     <Prize/>
+    <Footer/>
     </div>
 
   )
