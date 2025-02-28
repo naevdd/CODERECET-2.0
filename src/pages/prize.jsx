@@ -38,6 +38,6 @@ const Prize = () => {
         </div>
         
         </div>
-    );
+    )
     }
 export default Prize;
