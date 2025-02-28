@@ -25,7 +25,7 @@ const Prize = () => {
                 </div>
             <div className='h-full border-y border-l border-custom-gray pb-14  flex flex-col items-center justify-center space-y-7 '>
             <img src={third} 
-     alt="third" 
+     
      className="mt-32 drop-shadow-[0_0_80px_rgba(118,53,37,1)] 
                 hover:drop-shadow-[0_0_150px_rgba(255,0,0,1)] 
                 
