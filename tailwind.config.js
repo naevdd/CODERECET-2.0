@@ -18,11 +18,16 @@ module.exports = {
     },
     animation: {
       'infinite-scroll': 'infinite-scroll 15s linear infinite',
+      float: "float 2s ease-in-out infinite",
     },
     keyframes: {
       'infinite-scroll': {
         "100%": { transform: 'translateX(0)' },
         "0%": { transform: 'translateX(-91%)' },
+      },
+      float: {
+        "0%, 100%": { transform: "translateY(0px)" },
+        "50%": { transform: "translateY(-40px)" },
       }
     }    
   },
