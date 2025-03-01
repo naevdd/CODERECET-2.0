@@ -4,7 +4,7 @@ import third from '../assets/3.png';
 
 const Prize = () => {
     return (
-        <div className='bg-custom-black flex flex-col gap-y-9 items-center justify-start h-full'>
+        <div className='bg-custom-black flex flex-col gap-y-9 items-center justify-start min-h-screen w-screen '>
             <div className='text-custom-yellow font-seasons_r text-7xl md:text-8xl'>PRIZES</div>
 
             {/* Flex container for prizes */}
