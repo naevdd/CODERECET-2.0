@@ -1,6 +1,9 @@
 import first from '../assets/1.png';
 import second from '../assets/2.png';
 import third from '../assets/3.png';
+import gift1 from '../assets/gift1.png';
+import gift2 from '../assets/gift2.png';
+import gift from '../assets/Gifts.png';
 
 const Prize = () => {
     return (
@@ -42,11 +45,18 @@ const Prize = () => {
 
             {/* Additional Content */}
             <div className='p-10 w-full flex items-center justify-center'>
-                <div className='bg-custom-yellow w-[1250px] flex flex-col items-start p-5 md:p-10 rounded-lg space-y-5'>
+            
+                <div className='bg-custom-yellow w-[1250px] flex flex-col items-start p-5 md:px-14 md:pb-6 md:pt-10 rounded-lg md:rounded-3xl space-y-6 '>
                     <div className='font-seasons_r text-4xl md:text-6xl'>Is that all?</div>
-                    <div className='text-2xl md:text-4xl font-satoshi_v text-custom-white md:w-[75%]'>
+                    <div className='flex md:flex-row items-start justify-start '>
+                    <div className='text-2xl md:text-4xl font-satoshi_v text-custom-white w-full md:w-[75%]'>
                         Not at all! Everyone who gets selected gets Goodies! T-Shirts, stickers, you name it!
                     </div>
+                    <div className=' w-24 md:w-[30%] md:flex md:flex-row justify-end -mt-20 md:-mt-36 md:-mr-36'>
+                      <img src={gift} alt="gift" className="w-24 md:w-96"/>
+                    </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
