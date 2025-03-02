@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-scroll';
 import gif from '../assets/cube_float1 1.gif'
 import logo from '../assets/logo.png'
 import menu from '../assets/menu.svg'
@@ -8,7 +9,7 @@ function LandingPage() {
     const [isOpen, setIsOpen] = useState(false);
     const words=["CODE RECET","CODE RECET","CODE RECET","CODE RECET","CODE RECET","CODE RECET","CODE RECET"]
     return (
-        <div className='min-h-screen bg-custom-black'>
+        <div className='min-h-screen w-screen bg-custom-black'>
             <div className='justify-center flex'>
                 <div className='flex h-full gap-24 lg:gap-64 absolute'>
                     <div className='w-[1px] bg-custom-gray'></div>
@@ -20,24 +21,16 @@ function LandingPage() {
                 </div>
             </div>
             <div className='flex justify-center'>
-                <nav className="flex mt-10 w-full">
-                    <div className="lg:w-48 z-10 lg:ml-10 ml-2 cursor-pointer">
+                <nav className="flex mt-10 w-full z-50">
+                    <div className="lg:w-48 lg:ml-10 ml-2 cursor-pointer">
                         <img src={logo} width={100} height={100}/>
                     </div>
                     <div className='w-full'>
-                    <ul className="sm:flex hidden w-full lg:text-xl font-satoshi_v space-x-2 lg:space-x-20 text-white font-medium justify-center items-center">
-                        <li className=''>
-                            About
-                        </li>
-                        <li>
-                            Timeline
-                        </li>
-                        <li>
-                            Gallery
-                        </li>
-                        <li>
-                            Contact
-                        </li>
+                    <ul className="sm:flex hidden w-full lg:text-xl font-satoshi_v space-x-2 lg:space-x-20 text-white justify-center items-center">
+                    <li><Link to="about" smooth={true} duration={500} className="cursor-pointer">About</Link></li>
+                    <li><Link to="countdown" smooth={true} duration={500} className="cursor-pointer">Timeline</Link></li>
+                    <li><Link to="gallery" smooth={true} duration={500} className="cursor-pointer">Gallery</Link></li>
+                    <li><Link to="contact" smooth={true} duration={500} className="cursor-pointer">Contact</Link></li>
                     </ul>
                     </div>
                     <button
@@ -56,18 +49,10 @@ function LandingPage() {
                     {isOpen && (
                         <div className="sm:hidden p-4 top-0 h-svh w-full absolute z-40 bg-gray-50 shadow-lg">
                         <ul className="space-y-4 flex flex-col p-10 border-2 border-black rounded-2xl text-xl font-satoshi_v text-gray-700">
-                            <li className='text-center'>
-                            About
-                            </li>
-                            <li className='text-center'>
-                            Timeline
-                            </li >
-                            <li className='text-center'>
-                            Gallery
-                            </li>
-                            <li className='text-center'>
-                            Contact
-                            </li>
+                        <li className="text-center"><Link to="about" smooth={true} duration={500} className="cursor-pointer">About</Link></li>
+                        <li className="text-center"><Link to="countdown" smooth={true} duration={500} className="cursor-pointer">Timeline</Link></li>
+                        <li className="text-center"><Link to="gallery" smooth={true} duration={500} className="cursor-pointer">Gallery</Link></li>
+                        <li className="text-center"><Link to="contact" smooth={true} duration={500} className="cursor-pointer">Contact</Link></li>
                             <button className='sm:hidden mx-auto rounded-full'>
                                 <p className='text-custom-yellow font-seasons_r font-extrabold text-lg'>REGISTER</p>
                             </button>

@@ -11,7 +11,7 @@ import iet from '../assets/iet.png';
 
 function Footer() {
   return (
-    <div className='bg-custom-black md:p-10 justify-center items-center flex '>
+    <div className='bg-custom-black w-screen md:p-10 justify-center items-center flex '>
       <div className='bg-custom-yellow md:w-[1500px] h-[720px] rounded-2xl w-[380px]'>
         <div className='flex md:justify-start justify-center items-center md:pt-16 md:pl-20 h-[220px] pr-5'>
             <img src={logo} className='w-28 h-28'/>
@@ -20,23 +20,23 @@ function Footer() {
         <div className='flex md:flex-row md:gap-20 flex-col gap-16 '>
         <div className='justify-start flex flex-col  gap-6 md:pl-20 md:pt-10'>
             <div className=' flex flex-row md:pl-0 pl-4'>
-            <span className='text-2xl font-bold' >></span> 
+            <span className='text-2xl font-bold' ></span> 
                 <div className='text-lg pl-4  text-[25px] font-semibold'>Home</div>
             </div>
             <div className=' flex flex-row md:pl-0 pl-4'>
-                <span className='text-2xl font-bold' >></span>
+                <span className='text-2xl font-bold' ></span>
                 <div className='text-lg pl-4  text-[25px] font-semibold'>About us</div>
             </div>
             <div className=' flex flex-row md:pl-0 pl-4'>
-            <span className='text-2xl font-bold' >></span>
+            <span className='text-2xl font-bold' ></span>
                 <div className='text-lg pl-4  text-[25px] font-semibold'>Events</div>
             </div>
             <div className=' flex flex-row md:pl-0 pl-4'>
-                <span className='text-2xl font-bold' >></span>
+                <span className='text-2xl font-bold' ></span>
                 <div className='text-lg pl-4  text-[25px] font-semibold'>Gallery</div>
             </div>
             <div className=' flex flex-row md:pl-0 pl-4'>
-            <span className='text-2xl font-bold' >></span>
+            <span className='text-2xl font-bold' ></span>
                 <div className='text-lg pl-4  text-[25px] font-semibold'>Our Team</div>
             </div>
         </div>
