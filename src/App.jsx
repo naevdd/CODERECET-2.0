@@ -3,6 +3,7 @@ import Countdown from "./pages/countdown"
 import AboutUs from "./pages/aboutus"
 import Prize from "./pages/prize"
 import Footer from "./pages/Footer"
+import Gallery from "./pages/gallery"
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
     <Countdown/>
     <AboutUs/>
     <Prize/>
+    <Gallery/>
     <Footer/>
     </div>
 

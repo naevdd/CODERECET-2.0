@@ -11,7 +11,7 @@ import iet from '../assets/iet.png';
 
 function Footer() {
   return (
-    <div className='bg-custom-black md:p-10 justify-center items-center flex '>
+    <div className='bg-custom-black w-screen md:p-10 justify-center items-center flex '>
       <div className='bg-custom-yellow md:w-[1500px] h-[720px] rounded-2xl w-[380px]'>
         <div className='flex md:justify-start justify-center items-center md:pt-16 md:pl-20 h-[220px] pr-5'>
             <img src={logo} className='w-28 h-28'/>
