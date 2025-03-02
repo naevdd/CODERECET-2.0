@@ -3,7 +3,7 @@ import imgtop from '../assets/abtimgtop.png';
 import arrow from '../assets/btnarrow.svg';
 import star from '../assets/star.svg';
 import image from '../assets/trimg.png';
-import gif from '../assets/Code Recet.gif';
+import gif from '../assets/Code recet.gif';
 
 function AboutUs() {
   return (

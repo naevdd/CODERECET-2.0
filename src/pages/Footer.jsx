@@ -20,23 +20,23 @@ function Footer() {
         <div className='flex md:flex-row md:gap-20 flex-col gap-16 '>
         <div className='justify-start flex flex-col  gap-6 md:pl-20 md:pt-10'>
             <div className=' flex flex-row md:pl-0 pl-4'>
-            <span className='text-2xl font-bold' >></span> 
+            <span className='text-2xl font-bold' ></span> 
                 <div className='text-lg pl-4  text-[25px] font-semibold'>Home</div>
             </div>
             <div className=' flex flex-row md:pl-0 pl-4'>
-                <span className='text-2xl font-bold' >></span>
+                <span className='text-2xl font-bold' ></span>
                 <div className='text-lg pl-4  text-[25px] font-semibold'>About us</div>
             </div>
             <div className=' flex flex-row md:pl-0 pl-4'>
-            <span className='text-2xl font-bold' >></span>
+            <span className='text-2xl font-bold' ></span>
                 <div className='text-lg pl-4  text-[25px] font-semibold'>Events</div>
             </div>
             <div className=' flex flex-row md:pl-0 pl-4'>
-                <span className='text-2xl font-bold' >></span>
+                <span className='text-2xl font-bold' ></span>
                 <div className='text-lg pl-4  text-[25px] font-semibold'>Gallery</div>
             </div>
             <div className=' flex flex-row md:pl-0 pl-4'>
-            <span className='text-2xl font-bold' >></span>
+            <span className='text-2xl font-bold' ></span>
                 <div className='text-lg pl-4  text-[25px] font-semibold'>Our Team</div>
             </div>
         </div>
