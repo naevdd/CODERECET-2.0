@@ -1,4 +1,5 @@
 import React from 'react';
+import refreshImage from '../assets/refresh.png';
 
 export default function RefreshReboot() {
   return (
@@ -6,7 +7,7 @@ export default function RefreshReboot() {
   {/* Left Side - Image */}
   <div className="md:w-1/2 w-full">
     <img 
-      src="./src/assets/refresh.png" 
+      src={refreshImage} 
       alt="Hackathon"
       className="w-[600px] h-auto mr-0"
     />
