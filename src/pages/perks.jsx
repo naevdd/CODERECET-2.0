@@ -30,11 +30,11 @@ const PerkCard = ({ title, description, image }) => {
 
   return (
     <motion.div
-      className="relative w-full sm:w-[48%] md:w-[30%] lg:w-[23vw] max-w-[332.24px] 
-      h-[60vw] sm:h-[50vw] md:h-[45vw] lg:h-[42vw] max-h-[607.57px] 
-      perspective-1000 cursor-pointer"
+      className="relative w-[23vw] h-[42vw] max-w-[332px] max-h-[607px] 
+      min-w-[250px] min-h-[450px] perspective-1000 cursor-pointer"
       onClick={() => setIsFlipped(!isFlipped)}
     >
+
       <motion.div
         className="relative w-full h-full rounded-[1.5vw] shadow-lg border-[2px] border-custom-yellow"
         animate={{ rotateY: isFlipped ? 360 : 0 }}
@@ -43,11 +43,11 @@ const PerkCard = ({ title, description, image }) => {
       >
         {/* Front Side */}
         <div
-          className={`absolute w-full h-full flex flex-col justify-center items-center text-center 
-          px-[22px] py-[10%] rounded-[1.5vw] ${backgroundColor}`}
+          className={`absolute w-full h-full flex flex-col justify-between items-center text-center 
+          px-[22px] py-[20%] rounded-[1.5vw] ${backgroundColor}`}
           style={{ backfaceVisibility: "hidden", gap: "clamp(20px, 2.5vw, 32px)" }}
         >
-          <h3 className="text-custom-white font-normal font-seasons_r leading-none text-[clamp(24px,4vw,48.77px)]">
+          <h3 className="text-custom-white font-normal font-seasons_r leading-none text-[clamp(24px,4vw,48.77px)] h-[clamp(40px, 5vw, 60px)] flex items-center justify-center">
             {title}
           </h3>
 
@@ -56,18 +56,19 @@ const PerkCard = ({ title, description, image }) => {
             {image === "PLACEHOLDER_GIF" ? <span className="text-white text-sm">GIF Here</span> : <img src={image} alt={title} className="w-full h-full object-contain" />}
           </div>
 
-          <p className="text-[#EAEAEA] font-normal font-satoshi_v text-[clamp(18px,1.8vw,20px)]">
+          <p className="text-custom-white font-normal font-satoshi_v text-[clamp(18px,1.8vw,20px)] flex-grow flex items-start text-center">
+            
             {description}
           </p>
         </div>
 
         {/* Back Side */}
         <div
-          className={`absolute w-full h-full flex flex-col justify-center items-center text-center 
-          px-[22px] py-[10%] rounded-[1.5vw] ${backgroundColor}`}
+          className={`absolute w-full h-full flex flex-col justify-between items-center text-center 
+          px-[22px] py-[20%] rounded-[1.5vw] ${backgroundColor}`}
           style={{ transform: "rotateY(180deg)", backfaceVisibility: "hidden", gap: "clamp(20px, 2.5vw, 32px)" }}
         >
-          <h3 className="text-custom-white font-normal font-seasons_r leading-none text-[clamp(24px,4vw,48.77px)]">
+          <h3 className="text-custom-white font-normal font-seasons_r leading-none text-[clamp(24px,4vw,48.77px)] h-[clamp(40px, 5vw, 60px)] flex items-center justify-center">
             {title}
           </h3>
 
@@ -76,7 +77,7 @@ const PerkCard = ({ title, description, image }) => {
             {image === "PLACEHOLDER_GIF" ? <span className="text-white text-sm">GIF Here</span> : <img src={image} alt={title} className="w-full h-full object-contain" />}
           </div>
 
-          <p className="text-[#EAEAEA] font-normal font-satoshi_v text-[clamp(18px,1.8vw,20px)]">
+          <p className="text-[#EAEAEA] font-normal font-satoshi_v text-[clamp(18px,1.8vw,20px)] flex-grow flex items-start text-center">
             {description}
           </p>
         </div>
