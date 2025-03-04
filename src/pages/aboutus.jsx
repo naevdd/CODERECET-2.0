@@ -7,7 +7,7 @@ import gif from '../assets/Code recet.gif';
 
 function AboutUs() {
   return (
-    <div id="about" className="min-h-screen w-screen bg-custom-black relative flex flex-col lg:grid lg:grid-cols-12 lg:p-6 lg:pr-20 lg:pl-10">
+    <div className="min-h-screen w-screen bg-[linear-gradient(to_bottom,#000000_100%,#565D60_9%)] relative flex flex-col lg:grid lg:grid-cols-12 lg:p-6 lg:pr-20 lg:pl-10 overflow-hidden max-w-full">
       
       {/* Left Text Section */}
       <div className="w-full lg:col-span-5 lg:col-start-2 pt-10 pl-6 lg:pl-0 ">
@@ -47,7 +47,7 @@ function AboutUs() {
         {/* Background Images */}
         <div className="absolute w-[500px] lg:w-[800px] min-h-full">
           <img src={imgtop} className="absolute w-[400px] lg:w-[500px] -mt-36 lg:mt-0 z-1" />
-          <img src={imgtop} className="absolute w-[400px] lg:w-[600px] mt-28 lg:mt-56 ml-36 lg:ml-52 z-0" />
+          <img src={imgtop} className="absolute w-[370px] lg:w-[600px] mt-28 lg:mt-56 ml-36 lg:ml-52 z-0" />
         </div>
 
         {/* Floating GIF */}

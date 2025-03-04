@@ -14,7 +14,9 @@ module.exports = {
       fontFamily: {
         seasons_r:['Seasons_r'],
         satoshi_v:['Satoshi_v'],
-        bebas_neue:['Bebas']
+        bebas_neue:['Bebas'],
+        poppins: ['Poppins', 'sans-serif']
+
       },
       animation: {
         'infinite-scroll': 'infinite-scroll 15s linear infinite',

@@ -7,7 +7,7 @@ import gift from '../assets/Gifts.png';
 
 const Prize = () => {
     return (
-        <div className='bg-custom-black flex flex-col gap-y-9 items-center justify-start min-h-screen w-screen '>
+        <div className='bg-custom-black flex flex-col gap-y-9 items-center justify-start min-h-screen'>
             <div className='text-custom-yellow font-seasons_r text-7xl md:text-8xl'>PRIZES</div>
 
             {/* Flex container for prizes */}
