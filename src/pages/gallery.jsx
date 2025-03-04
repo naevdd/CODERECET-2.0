@@ -16,7 +16,7 @@ const Gallery = () => {
     const image_array=[first, second, third, img1, img2, img3, img4, img5, img6, img7, img8]
 
     return (
-        <div id="gallery" className='bg-custom-black flex flex-col mx-auto items-center h-screen'>
+        <div id="gallery" className='bg-custom-black flex flex-col mx-auto items-center h-screen md:pt-20 pt-10'>
             <h1 className='text-custom-white font-seasons_r text-7xl md:text-8xl'>GALLERY<span className="text-custom-yellow">.</span></h1>
             <div className="w-[80vw] rounded-2xl overflow-hidden group mt-10">
                 <div className="-ml-[425px] -mt-[230px] grid -rotate-45 justify-center gap-4">
