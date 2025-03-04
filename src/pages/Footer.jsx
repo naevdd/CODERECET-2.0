@@ -6,8 +6,8 @@ import facebook from '../assets/facebook logo.png';
 import discord from '../assets/Discord logo.png';
 import linkedin from '../assets/Linkedin logo.png';
 import github from '../assets/Github logo.png';
-import tinkerhub from '../assets/tinkerhub_black.png';
-import iet from '../assets/IET.svg';
+import tinkerhub from '../assets/Tinkerhub.png';
+import iet from '../assets/IET.png';
 
 function Footer() {
   return (
@@ -43,10 +43,10 @@ function Footer() {
         <div className='flex justify-center mx-auto gap-4 items-center md:items-end md:flex-col flex-row ml-auto md:gap-6 md:h-[260px] h-[40px] '>
             <div className='hidden md:block text-2xl text-custom-black md:pr-10 font-poppins '>Hackathon organized by:</div>
             <div className='md:pr-20'>
-                <img src={tinkerhub} className=''/>
+                <img src={tinkerhub} className='w-40 h-auto'/>
             </div>
             <div className='md:pr-20'>
-                <img src={iet}/>
+                <img src={iet} className='w-36 h-auto'/>
             </div>
         </div>
         </div>
