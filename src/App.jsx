@@ -4,7 +4,9 @@ import AboutUs from "./pages/aboutus"
 import Prize from "./pages/prize"
 import Footer from "./pages/Footer"
 import Gallery from "./pages/gallery"
+import PerksSection from "./pages/perks"
 import RefreshReboot from "./pages/refreshreboot"
+
 
 function App() {
   return (
@@ -13,6 +15,7 @@ function App() {
     <Countdown/>
     <RefreshReboot/>
     <AboutUs/>
+    <PerksSection/>
     <Prize/>
     <Gallery/>
     <Footer/>
