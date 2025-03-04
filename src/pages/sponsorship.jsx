@@ -10,7 +10,7 @@ function Sponsors() {
       <h2 className="text-center text-5xl md:text-7xl font-seasons_r mb-6">
         OUR <span className="text-custom-yellow">SPONSORS.</span>
       </h2>
-      <div className="w-full max-w-screen-xl space-y-4">
+      <div className="flex flex-col md:flex-col w-full max-w-screen-xl space-y-4">
         <div className="border border-custom-yellow rounded-[15px] p-8 h-24 md:h-32 w-full"></div>
         <div className="border border-custom-yellow rounded-[15px] p-6 h-16 md:h-22 w-full"></div>
         <div className="border border-custom-yellow rounded-[15px] p-6 h-14 md:h-18 w-full"></div>
