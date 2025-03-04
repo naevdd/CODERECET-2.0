@@ -10,7 +10,7 @@ const PerksSection = () => {
   ];
 
   return (
-    <section className="relative w-screen overflow-hidden flex justify-center items-center py-10 mb-[12px] px-[22px]">
+    <section className="relative overflow-hidden flex justify-center items-center py-10 mb-[12px] px-[22px]">
       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full max-w-[1440px] border-t-[2px] border-custom-gray opacity-50"></div>
       {/* Cards Container */}
       <div className="w-full max-w-[1440px] flex flex-wrap justify-center gap-[2vw]">

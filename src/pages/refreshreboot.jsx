@@ -3,7 +3,7 @@ import refreshImage from '../assets/refresh.png';
 
 export default function RefreshReboot() {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center bg-black text-white p-10 md:ml-[50px] ml-0">
+    <div className="flex flex-col h-screen md:flex-row items-center justify-center bg-custom-black text-white p-10">
   {/* Left Side - Image */}
   <div className="md:w-1/2 w-full">
     <img 

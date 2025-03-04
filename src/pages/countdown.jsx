@@ -34,7 +34,7 @@ const countdown = () => {
       }, []);
     
     return (
-        <div id="countdown" className='bg-custom-black w-screen px-3 lg:px-14 min-h-screen'>
+        <div id="countdown" className='bg-custom-black px-3 lg:px-14 min-h-screen'>
             <div className='w-full gap-20 flex flex-col'>
                 <div className='lg:mt-64 mt-36 px-8 lg:px-64'>
                     <h1 className='font-satoshi_v text-white text-center 
