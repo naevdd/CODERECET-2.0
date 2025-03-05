@@ -15,7 +15,7 @@ function AboutUs() {
       <div className="w-full lg:col-span-5 lg:col-start-2 pt-10 p-4 pl-6 lg:pl-0 ">
         <h1 className="text-custom-white text-5xl font-seasons_r">What is</h1>
         <h1 className="text-custom-yellow text-5xl font-seasons_r">
-          Code ReCET?
+          Code ReCET <span className="text-custom-white">?</span>
         </h1>
         <h2 className="text-custom-white text-[17px] pr-4 font-satoshi_v mt-3 w-[350px] lg:w-[500px]">
           Code ReCET is a 36-hour hackathon that blends innovation, creativity,
@@ -25,7 +25,7 @@ function AboutUs() {
         </h2>
 
         <h1 className="text-white font-seasons_r text-3xl mt-6 mb-4">
-          Benefits <span className="text-custom-yellow">you get</span>
+          Benefits <span className="text-custom-yellow">you get</span>.
         </h1>
 
         <ul className="flex flex-col gap-3">

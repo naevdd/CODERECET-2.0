@@ -16,9 +16,9 @@ export default function RefreshReboot() {
       {/* Right Side - Text Content */}
       <div className="md:w-1/2 w-full pt-8 ml-0 mt-0">
         <h1 className="text-white z-10 font-seasons_r text-5xl text-left mt-0 ">
-          REFRESH <span style={{ color: "#C88D28" }}>IDEAS.</span>
+          REFRESH <span style={{ color: "#C88D28" }}>IDEAS</span>.
           <br />
-          REBOOT <span style={{ color: "#C88D28" }}>SOLUTIONS.</span>
+          REBOOT <span style={{ color: "#C88D28" }}>SOLUTIONS</span>.
         </h1>
         <p className="mt-6 text-gray-300 rounded-2xl text-s font-satoshi_v ">
           Great innovations start with fresh ideas. At{" "}
