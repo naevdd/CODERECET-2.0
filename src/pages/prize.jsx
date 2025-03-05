@@ -7,14 +7,14 @@ import gift from '../assets/Gifts.png';
 
 const Prize = () => {
     return (
-        <div className='bg-custom-black flex flex-col gap-y-9 items-center justify-start min-h-screen'>
+        <div className='bg-custom-black border-custom-gray flex flex-col gap-y-9 items-center justify-start min-h-screen'>
             <div className='text-custom-yellow font-seasons_r text-7xl md:text-8xl'>PRIZES</div>
 
             {/* Flex container for prizes */}
-            <div className='flex flex-wrap md:flex-nowrap items-center justify-center md:h-[800px] w-full'>
+            <div className='flex flex-wrap border-custom-gray md:border-t md:border-b md:flex-nowrap items-center justify-center md:h-[800px] w-full'>
 
                 {/* SECOND PRIZE - Always first in nowrap, moves to second in wrap */}
-                <div className='h-full order-2 md:order-1 md:border-y md:border-r border-custom-gray pb-14 px-5 flex flex-col items-center justify-center space-y-7'>
+                <div className='h-full order-2 md:order-1 pb-14 px-5 flex flex-col items-center justify-center space-y-7'>
                     <img src={second} 
                         alt="second" 
                         className="mt-32 hover:-translate-y-3  
@@ -25,14 +25,14 @@ const Prize = () => {
                 </div>
 
                 {/* FIRST PRIZE - Moves to first position in wrap, middle in nowrap */}
-                <div className='h-full order-1 md:order-2 md:border border-custom-gray pb-14 px-5 flex flex-col items-center justify-center space-y-7'>
+                <div className='h-full order-1 md:order-2 border-custom-gray md:border-l md:border-r pb-14 px-5 flex flex-col items-center justify-center space-y-7'>
                     <img src={first} alt="first" className="md:-mt-32 hover:-translate-y-3 transition-all duration-700 hover:filter hover:drop-shadow-[0px_0px_30px_rgba(215,159,24,1)] filter drop-shadow-[0px_0px_5px_rgba(215,159,24,0.5)]" />
                     <div className="font-seasons_r text-white text-3xl md:text-5xl">FIRST</div>
                     <div className="text-custom-yellow font-bebas_neue font-bold text-3xl md:text-5xl">Rs.40000</div>
                 </div>
 
                 {/* THIRD PRIZE - Always last */}
-                <div className='h-full order-3 md:order-3 md:border-y md:border-l border-custom-gray pb-14 flex flex-col items-center justify-center space-y-7'>
+                <div className='h-full order-3 md:order-3 border-custom-gray pb-14 flex flex-col items-center justify-center space-y-7'>
                     <img src={third} 
                         className="mt-32 drop-shadow-[0_0_30px_rgba(118,53,37,1)] 
                             hover:drop-shadow-[0_0_150px_rgba(255,0,0,0.8)] 

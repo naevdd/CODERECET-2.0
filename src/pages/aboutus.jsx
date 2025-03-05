@@ -7,13 +7,13 @@ import gif from '../assets/Code recet.gif';
 
 function AboutUs() {
   return (
-    <div className="min-h-screen w-screen bg-[linear-gradient(to_bottom,#000000_100%,#565D60_9%)] relative flex flex-col lg:grid lg:grid-cols-12 lg:p-6 lg:pr-20 lg:pl-10 overflow-hidden max-w-full">
+    <div className="min-h-screen w-screen bg-custom-black border-custom-gray border-b relative flex flex-col lg:grid lg:grid-cols-12 lg:p-6 lg:pr-20 lg:pl-10 overflow-hidden max-w-full">
       
       {/* Left Text Section */}
-      <div className="w-full lg:col-span-5 lg:col-start-2 pt-10 pl-6 lg:pl-0 ">
+      <div className="w-full lg:col-span-5 lg:col-start-2 pt-10 p-4 pl-6 lg:pl-0 ">
         <h1 className="text-custom-white text-5xl font-seasons_r">What is</h1>
         <h1 className="text-custom-yellow text-5xl font-seasons_r">Code ReCET?</h1>
-        <h2 className="text-custom-white text-[17px] font-satoshi_v mt-3 w-[350px] lg:w-[500px]">
+        <h2 className="text-custom-white text-[17px] pr-4 font-satoshi_v mt-3 w-[350px] lg:w-[500px]">
           Code ReCET is a 36-hour hackathon that blends innovation, creativity, and pure coding bliss! 
           Conducted collaboratively by TinkerHub CET and IET on campus CET, this hackathon is set to ignite 
           the tech spirit at College of Engineering, Trivandrum.
@@ -42,7 +42,7 @@ function AboutUs() {
       </div>
 
       {/* Right Side - Images and Register Section */}
-      <div className="lg:col-span-5 lg:col-start-8 relative flex w-full mt-28 lg:mt-0 -ml-4 lg:ml-0 mb-2 lg:mb-0 justify-center items-center">
+      <div className="lg:col-span-5 lg:col-start-8 relative flex w-full mt-28 lg:mt-0 pb-4 -ml-4 lg:ml-0 mb-2 lg:mb-0 justify-center items-center">
         
         {/* Background Images */}
         <div className="absolute w-[500px] lg:w-[800px] min-h-full">

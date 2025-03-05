@@ -3,7 +3,7 @@ import refreshImage from '../assets/refresh.png';
 
 export default function RefreshReboot() {
   return (
-    <div className="flex flex-col h-screen md:flex-row items-center justify-center bg-custom-black text-white p-10">
+    <div className="flex flex-col min-h-screen md:flex-row items-center border-custom-gray border-t border-b  bg-custom-black text-white p-4 md:p-10">
   {/* Left Side - Image */}
   <div className="md:w-1/2 w-full">
     <img 
@@ -14,7 +14,7 @@ export default function RefreshReboot() {
   </div>
 
       {/* Right Side - Text Content */}
-      <div className="md:w-1/2 w-full p-8 ml-0 mt-0">
+      <div className="md:w-1/2 w-full pt-8 ml-0 mt-0">
         <h1 className="text-white z-10 font-seasons_r text-5xl text-left mt-0 ">
           REFRESH <span className="text-yellow-500">IDEAS.</span><br />
           REBOOT <span className="text-yellow-500">SOLUTIONS.</span>

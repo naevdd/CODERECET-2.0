@@ -7,6 +7,7 @@ import Sponsorship from "./pages/sponsorship"
 import Gallery from "./pages/gallery"
 import PerksSection from "./pages/perks"
 import RefreshReboot from "./pages/refreshreboot"
+import FAQ from "./pages/faq"
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
     <Prize/>
     <Sponsorship/>
     <Gallery/>
+    <FAQ/>
     <Footer/>
     </div>
 
