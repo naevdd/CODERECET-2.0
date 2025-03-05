@@ -40,7 +40,7 @@ function LandingPage() {
                         {isOpen ? (
                             <img src={close} className='w-8 -mt-5 mr-[22px] bg-white rounded-sm'/>
                         ) : (
-                            <img src={menu} className='w-8 -mt-5 mr-[22px] bg-white rounded-sm'/>
+                            <img src={menu} className='w-8 -mt-5 mr-[28px] bg-white rounded-sm'/>
                         )}
                     </button>
                     <button className='sm:block hidden bg-custom-yellow lg:w-48 lg:h-12 rounded-full mr-10'>

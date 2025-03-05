@@ -1,3 +1,5 @@
+const { transform } = require('framer-motion');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -23,6 +25,7 @@ module.exports = {
         float: "float 2s ease-in-out infinite",
         'scroll-right': 'scroll-right 10s linear infinite',
         'scroll-left': 'scroll-left 10s linear infinite',
+        'rotateRight': 'rotateRight 1s ease-in-out',
       },
       keyframes: {
         'infinite-scroll': {
@@ -40,6 +43,11 @@ module.exports = {
         'scroll-left': {
           "0%": { transform: 'translateX(0)' },
           "100%": { transform: 'translateX(-100%)' },
+        },
+        'rotateRight': {
+          '0%': { transform: 'translateY(-13rem) rotateZ(0deg)'},
+          '50%': { transform: 'translateY(-13rem) rotateZ(90deg)'},
+          '100%': { transform: 'translateY(-13rem) rotateZ(0deg)'}
         }
       }    
     }
