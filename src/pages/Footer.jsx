@@ -6,7 +6,7 @@ import facebook from "../assets/facebook logo.png";
 import discord from "../assets/Discord logo.png";
 import linkedin from "../assets/Linkedin logo.png";
 import github from "../assets/Github logo.png";
-import tinkerhub from "../assets/Tinkerhub.png";
+import tinkerhub from "../assets/tinkerhub.png";
 import iet from "../assets/IET.png";
 
 function Footer() {
