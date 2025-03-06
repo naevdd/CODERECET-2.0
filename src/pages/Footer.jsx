@@ -55,7 +55,7 @@ function Footer() {
             <div className="md:pr-16 flex justify-center ">
               <img src={tinkerhub} className="w-40 h-auto" />
             </div>
-            <div className="md:pr-20 flex justify-center pr-3 md:pr-20">
+            <div className="md:pr-20 flex justify-center pr-3">
               <img src={iet} className="w-32 h-auto " />
             </div>
           </div>

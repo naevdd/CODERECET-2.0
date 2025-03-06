@@ -2,7 +2,7 @@ import React from 'react';
 
 function Sponsors() {
   return (
-    <div className="relative w-screen bg-custom-black border-custom-gray border-t border-b text-custom-white py-12 px-6 md:px-20 flex flex-col items-center">
+    <div className="relative bg-custom-black border-custom-gray border-t border-b text-custom-white py-12 px-6 md:px-20 flex flex-col items-center">
 
       {/* Our Sponsors Section */}
       <h2 className="text-center text-5xl md:text-7xl font-seasons_r mb-6">

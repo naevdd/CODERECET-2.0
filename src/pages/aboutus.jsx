@@ -7,7 +7,7 @@ import gif from '../assets/Code recet.gif';
 
 function AboutUs() {
   return (
-    <div id="about" className="min-h-screen w-screen bg-custom-black border-custom-gray border-b relative flex flex-col lg:grid lg:grid-cols-12 lg:p-6 lg:pr-20 lg:pl-10 overflow-hidden max-w-full">
+    <div id="about" className="min-h-screen bg-custom-black border-custom-gray border-b relative flex flex-col lg:grid lg:grid-cols-12 lg:p-6 lg:pr-20 lg:pl-10 overflow-hidden max-w-full">
       
       {/* Left Text Section */}
       <div className="w-full lg:col-span-5 lg:col-start-2 pt-10 p-4 pl-6 lg:pl-0 ">
