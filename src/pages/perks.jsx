@@ -64,7 +64,7 @@ const PerkCard = ({ title, description, image }) => {
         backfaceVisibility: "hidden",
       }}
     >
-      <h3 className="text-custom-white font-seasons_r text-[30px] lg:text-[40px] mb-4 h-[40px] flex items-center mt-4 sm:mt-6">
+      <h3 className="text-custom-white font-seasons_r text-[40px] lg:text-[40px] mb-4 h-[40px] flex items-center mt-4 sm:mt-6">
         {title}
       </h3>
 
@@ -72,7 +72,7 @@ const PerkCard = ({ title, description, image }) => {
         <img src={image} alt={title} className="w-full h-full object-contain" />
       </div>
 
-      <p className="text-custom-white font-satoshi_v text-base sm:text-lg flex-grow flex items-center px-2 text-center">
+      <p className="text-custom-white font-satoshi_v text-[20px] flex-grow flex items-center px-2 text-center">
         {description}
       </p>
     </div>
