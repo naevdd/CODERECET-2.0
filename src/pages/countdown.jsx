@@ -6,7 +6,7 @@ const countdown = () => {
     const formatNumber = (num) => (num < 10 ? `0${num}` : num);
 
     const calculateTimeLeft = () => {
-        const targetDate = new Date("March 21, " + new Date().getFullYear() + " 00:00:00");
+        const targetDate = new Date("July 18, " + new Date().getFullYear() + " 00:00:00");
         const now = new Date();
         const difference = targetDate - now;
     
@@ -18,6 +18,13 @@ const countdown = () => {
             minutes: Math.floor((difference / (1000 * 60)) % 60),
             seconds: formatNumber(Math.floor((difference / 1000) % 60)),
           };
+        } else {
+              timeLeft = {
+                days: "00",
+                hours: "00",
+                minutes: "00",
+                seconds: "00",
+              };
         }
         return timeLeft;
       };
