@@ -55,9 +55,9 @@ const Gallery = () => {
                     </div>
                 </div>
             </div>
-            <div id="gallery" className="flex md:hidden bg-custom-black border-custom-gray p-10 border-b flex-col items-center h-screen">
+            <div id="gallery" className="flex md:hidden bg-custom-black border-custom-gray py-10 border-b flex-col items-center">
             <h1 className='text-custom-white font-seasons_r text-7xl md:text-8xl'>GALLERY<span className="text-custom-yellow">.</span></h1>
-            <div className="card-3d mt-32">
+            <div className="card-3d mt-10">
                 {images.map((img, index) => (
                     <div
                     key={index}
