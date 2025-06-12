@@ -21,31 +21,40 @@ function Footer() {
           <div className="justify-start flex flex-col md:w-[600px] gap-2 md:pl-20 md:pt-10 md:h-[230px] h-[200px]">
             <div className=" flex flex-row md:pl-0 pl-4">
               <span className="text-2xl font-poppins">&gt;</span>
+              <a href="#home" className="block">
               <div className="text-lg pl-4  text-[25px] font-poppins">Home</div>
+              </a>
             </div>
             <div className=" flex flex-row md:pl-0 pl-4">
               <span className="text-2xl font-poppins">&gt;</span>
+              <a href="#about" className="block">
               <div className="text-lg pl-4  text-[25px] font-poppins">
                 About us
               </div>
+              </a>
             </div>
             <div className=" flex flex-row md:pl-0 pl-4">
               <span className="text-2xl font-poppins">&gt;</span>
+            
               <div className="text-lg pl-4  text-[25px] font-poppins">
                 Events
               </div>
+             
             </div>
             <div className=" flex flex-row md:pl-0 pl-4">
               <span className="text-2xl font-poppins">&gt;</span>
+              <a href="#gallery" className="block">
               <div className="text-lg pl-4  text-[25px] font-poppins">
                 Gallery
               </div>
+              </a>
             </div>
             <div className=" flex flex-row md:pl-0 pl-4">
               <span className="text-2xl font-poppins">&gt;</span>
               <div className="text-lg pl-4  text-[25px] font-poppins">
                 Our Team
               </div>
+              
             </div>
           </div>
           <div className="flex justify-center mx-auto items-center md:items-end md:flex-col flex-row md:ml-auto md:gap-6 md:h-[260px] h-[40px] w-full md:w-auto ">
