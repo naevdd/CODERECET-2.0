@@ -15,8 +15,8 @@ const Gallery = () => {
     const images=[first, second, third, img1, img2, img3, img4, img5, img6, img7]
 
     return (
-        <div>
-            <div id="gallery" className='hidden bg-custom-black border-custom-gray p-20 border-b md:flex flex-col items-center h-screen md:h-[150vh] md:pt-20 pt-10'>
+        <div id="gallery">
+            <div className='hidden bg-custom-black border-custom-gray p-20 border-b md:flex flex-col items-center h-screen md:h-[150vh] md:pt-20 pt-10'>
                 <h1 className='text-custom-white font-seasons_r text-7xl md:text-8xl'>GALLERY<span className="text-custom-yellow">.</span></h1>
                 <div className="w-[80vw] rounded-2xl overflow-hidden group mt-10">
                     <div className="-ml-[425px] -mt-[230px] grid -rotate-45 justify-center gap-4">
@@ -55,9 +55,9 @@ const Gallery = () => {
                     </div>
                 </div>
             </div>
-            <div id="gallery" className="flex md:hidden bg-custom-black border-custom-gray p-10 border-b flex-col items-center h-screen">
+            <div className="flex md:hidden bg-custom-black border-custom-gray py-10 border-b flex-col items-center">
             <h1 className='text-custom-white font-seasons_r text-7xl md:text-8xl'>GALLERY<span className="text-custom-yellow">.</span></h1>
-            <div className="card-3d mt-32">
+            <div className="card-3d mt-10">
                 {images.map((img, index) => (
                     <div
                     key={index}
