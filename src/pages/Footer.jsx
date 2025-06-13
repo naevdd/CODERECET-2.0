@@ -43,14 +43,7 @@ function Footer() {
                 </div>
               </a>
             </div>
-            <div className=" flex flex-row md:pl-0 pl-4">
-              <span className="text-2xl font-poppins">&gt;</span>
-              <a href="#sponsors" className="block">
-                <div className="text-lg pl-4  text-[25px] font-poppins">
-                  Our Sponsors
-                </div>
-              </a>
-            </div>
+            
             <div className=" flex flex-row md:pl-0 pl-4">
               <span className="text-2xl font-poppins">&gt;</span>
               <a href="#gallery" className="block">
