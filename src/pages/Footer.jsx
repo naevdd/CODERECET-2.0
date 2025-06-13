@@ -1,4 +1,6 @@
 import React from "react";
+import { useState } from "react";
+
 import logo from "../assets/CodeRecet_LOGO.png";
 import vector from "../assets/Vector.png";
 import twitter from "../assets/twitter logo.png";
@@ -8,10 +10,16 @@ import linkedin from "../assets/Linkedin logo.png";
 import github from "../assets/Github logo.png";
 import tinkerhub from "../assets/tinkerhub.png";
 import iet from "../assets/IET.png";
+import instagram from "../assets/instagram.svg";
 
 function Footer() {
+  const [showContacts, setShowContacts] = useState(false);
+
   return (
-    <div id="contact" className="bg-custom-black md:p-10 justify-center items-center flex ">
+    <div
+      id="contact"
+      className="bg-custom-black md:p-10 justify-center items-center flex "
+    >
       <div className="bg-custom-yellow md:w-[1300px] md:h-[560px] md:rounded-2xl rounded-2xl rounded-b-none w-[380px] h-[510px]">
         <div className="flex md:justify-start justify-center items-center md:pt-10 md:pl-20 md:h-[150px] h-[120px] w-full md:w-auto pl-4 pt-2">
           <img src={logo} className="md:w-20 md:h-20 w-20 h-20" />
@@ -21,40 +29,60 @@ function Footer() {
           <div className="justify-start flex flex-col md:w-[600px] gap-2 md:pl-20 md:pt-10 md:h-[230px] h-[200px]">
             <div className=" flex flex-row md:pl-0 pl-4">
               <span className="text-2xl font-poppins">&gt;</span>
-              <a href="#home" className="block">
-              <div className="text-lg pl-4  text-[25px] font-poppins">Home</div>
+              <a href="#landing" className="block">
+                <div className="text-lg pl-4  text-[25px] font-poppins">
+                  Home
+                </div>
               </a>
             </div>
             <div className=" flex flex-row md:pl-0 pl-4">
               <span className="text-2xl font-poppins">&gt;</span>
               <a href="#about" className="block">
-              <div className="text-lg pl-4  text-[25px] font-poppins">
-                About us
-              </div>
+                <div className="text-lg pl-4  text-[25px] font-poppins">
+                  About us
+                </div>
               </a>
             </div>
             <div className=" flex flex-row md:pl-0 pl-4">
               <span className="text-2xl font-poppins">&gt;</span>
-            
-              <div className="text-lg pl-4  text-[25px] font-poppins">
-                Events
-              </div>
-             
+              <a href="#sponsors" className="block">
+                <div className="text-lg pl-4  text-[25px] font-poppins">
+                  Our Sponsors
+                </div>
+              </a>
             </div>
             <div className=" flex flex-row md:pl-0 pl-4">
               <span className="text-2xl font-poppins">&gt;</span>
               <a href="#gallery" className="block">
-              <div className="text-lg pl-4  text-[25px] font-poppins">
-                Gallery
-              </div>
+                <div className="text-lg pl-4  text-[25px] font-poppins">
+                  Gallery
+                </div>
               </a>
             </div>
-            <div className=" flex flex-row md:pl-0 pl-4">
-              <span className="text-2xl font-poppins">&gt;</span>
-              <div className="text-lg pl-4  text-[25px] font-poppins">
-                Our Team
+            <div className="flex flex-col md:pl-0 pl-4">
+              <div
+                className="flex flex-row items-center cursor-pointer"
+                onClick={() => setShowContacts(!showContacts)}
+              >
+                <span className="text-2xl font-poppins">&gt;</span>
+                <div className="text-lg pl-4 text-[25px] font-poppins">
+                  Contact Us
+                </div>
               </div>
-              
+
+              {/* Dropdown */}
+              {showContacts && (
+                <div className="pl-8 pt-2 space-y-1 transition-all duration-300 ease-in-out text-[18px] font-poppins">
+                  <div>
+                    <span className="font-semibold">Niyas:</span> +91 77363
+                    48128
+                  </div>
+                  <div>
+                    <span className="font-semibold">Josin:</span> +91 94479
+                    63228
+                  </div>
+                </div>
+              )}
             </div>
           </div>
           <div className="flex justify-center mx-auto items-center md:items-end md:flex-col flex-row md:ml-auto md:gap-6 md:h-[260px] h-[40px] w-full md:w-auto ">
@@ -70,36 +98,14 @@ function Footer() {
           </div>
         </div>
         <div className="flex justify-center items-center flex-row md:justify-start md:gap-12 md:pl-20 md:pt-32 gap-4 pt-10 md:h-[100px] h-[80px] w-full pb-4 md:pb-0">
-          <div>
-            <img
-              src={twitter}
-              className="transition filter hover:invert hover:brightness-200 w-6 md:w-auto md:h-auto"
-            />
-          </div>
-          <div>
-            <img
-              src={facebook}
-              className="transition filter hover:invert hover:brightness-200 w-6 md:w-auto md:h-auto"
-            />
-          </div>
-          <div>
-            <img
-              src={discord}
-              className="transition filter hover:invert hover:brightness-200 w-6 md:w-auto md:h-auto"
-            />
-          </div>
-          <div>
-            <img
-              src={linkedin}
-              className="transition filter hover:invert hover:brightness-200 w-6 md:w-auto md:h-auto"
-            />
-          </div>
-          <div>
-            <img
-              src={github}
-              className="transition filter hover:invert hover:brightness-200 w-6 md:w-auto md:h-auto"
-            />
-          </div>
+          <a
+            href="https://www.instagram.com/coderecet/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition hover:brightness-200"
+          >
+            <img src={instagram} alt="Instagram" className="w-14 h-14" />
+          </a>
         </div>
       </div>
     </div>
