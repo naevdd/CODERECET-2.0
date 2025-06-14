@@ -6,17 +6,18 @@ import menu from "../assets/menu_white.svg";
 import close from "../assets/close_white.svg";
 
 function LandingPage() {
-    const [isOpen, setIsOpen] = useState(false);
-    const words = [
-      "CODE RECET",
-      "CODE RECET",
-      "CODE RECET",
-      "CODE RECET",
-      "CODE RECET",
-      "CODE RECET",
-      "CODE RECET",
-    ];
-    return (
+  const [isOpen, setIsOpen] = useState(false);
+  const words = [
+    "CODE RECET",
+    "CODE RECET",
+    "CODE RECET",
+    "CODE RECET",
+    "CODE RECET",
+    "CODE RECET",
+    "CODE RECET",
+  ];
+  return (
+    <div id="landing">
       <div className="min-h-screen bg-custom-black">
         <div className="justify-center flex">
           <div className="flex h-full gap-24 lg:gap-64 absolute">
@@ -81,23 +82,15 @@ function LandingPage() {
               onClick={() => setIsOpen(!isOpen)}
               className="inline-block sm:hidden text-white z-50 focus:outline-none"
             >
-              {isOpen ? (
-                <img
-                  src={close}
-                  className="w-8 -mt-5 mr-[22px] bg-black rounded-sm p-1"
-                />
-              ) : (
-                <img
-                  src={menu}
-                  className="w-8 -mt-5 mr-[28px] bg-black rounded-sm p-1"
-                />
-              )}
+              <div className="w-10 h-10 bg-custom-black rounded-sm flex items-center justify-center mr-[24px] -mt-5">
+                <img src={isOpen ? close : menu} className="w-6 h-6" />
+              </div>
             </button>
             <button className="sm:block hidden bg-custom-yellow lg:w-48 lg:h-12 rounded-full mr-10">
               <p className="text-white font-satoshi_v lg:text-xl">REGISTER</p>
             </button>
             <div
-              className={`sm:hidden fixed top-0 left-0 h-screen w-[60%] bg-black z-40 shadow-lg transform transition-transform duration-300 ${
+              className={`sm:hidden fixed top-0 left-0 h-screen w-[60%] bg-custom-black z-40 shadow-lg transform transition-transform duration-300 ${
                 isOpen ? "translate-x-0" : "-translate-x-full"
               }`}
             >
@@ -153,7 +146,6 @@ function LandingPage() {
                 </button>
               </ul>
             </div>
-
           </nav>
         </div>
         <div className="flex flex-col items-center">
@@ -179,13 +171,14 @@ function LandingPage() {
             <div className="overflow-hidden relative">
               <div className="flex animate-infinite-scroll space-x-16 sm:space-x-36 p-2">
                 {words.concat(words).map((word, index) => (
-                <li
-                  key={index}
-                  className="text-xl sm:text-lg lg:text-6xl list-none text-custom-gray font-seasons_r whitespace-nowrap"
-                >
-                  {word}
-                </li>
-              ))}
+                  <li
+                    key={index}
+                    className="text-xl sm:text-lg lg:text-6xl list-none text-custom-gray font-seasons_r whitespace-nowrap"
+                  >
+                    {word}
+                  </li>
+                ))}
+              </div>
             </div>
           </div>
         </div>
