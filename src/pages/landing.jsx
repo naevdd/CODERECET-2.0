@@ -109,7 +109,7 @@ function LandingPage() {
                 <li className="ml-4 lg:ml-8">
                   <div
                     className="apply-button hidden sm:block"
-                    data-hackathon-slug="ethindia-2023"
+                    data-hackathon-slug="code-recet-2"
                     data-button-theme="light"
                     style={{
                       height: "44px",
