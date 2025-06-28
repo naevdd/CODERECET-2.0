@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import gif from "../assets/cube_float1 1.gif";
 import logo from "../assets/logo.png";
@@ -16,6 +16,16 @@ function LandingPage() {
     "CODE RECET",
     "CODE RECET",
   ];
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
   return (
     <div id="landing">
       <div className="min-h-screen bg-custom-black">
@@ -76,8 +86,21 @@ function LandingPage() {
                     Contact
                   </Link>
                 </li>
+                <li className="ml-4 lg:ml-8">
+                  <div
+                    className="apply-button hidden sm:block"
+                    data-hackathon-slug="coderecet2"
+                    data-button-theme="light"
+                    style={{
+                      height: "44px",
+                      width: "192px",
+                      marginRight: "40px",
+                    }}
+                  ></div>
+                </li>
               </ul>
             </div>
+
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="inline-block sm:hidden text-white z-50 focus:outline-none"
@@ -86,9 +109,9 @@ function LandingPage() {
                 <img src={isOpen ? close : menu} className="w-6 h-6" />
               </div>
             </button>
-            <button className="sm:block hidden bg-custom-yellow lg:w-48 lg:h-12 rounded-full mr-10">
+            {/* <button className="sm:block hidden bg-custom-yellow lg:w-48 lg:h-12 rounded-full mr-10">
               <p className="text-white font-satoshi_v lg:text-xl">REGISTER</p>
-            </button>
+            </button> */}
             <div
               className={`sm:hidden fixed top-0 left-0 h-screen w-[60%] bg-custom-black z-40 shadow-lg transform transition-transform duration-300 ${
                 isOpen ? "translate-x-0" : "-translate-x-full"
