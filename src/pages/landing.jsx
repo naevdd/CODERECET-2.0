@@ -17,34 +17,15 @@ function LandingPage() {
     "CODE RECET",
   ];
   useEffect(() => {
-  console.log("Loading Devfolio SDK…");
-  if (!document.getElementById("devfolio-script")) {
     const script = document.createElement("script");
     script.src = "https://apply.devfolio.co/v2/sdk.js";
     script.async = true;
     script.defer = true;
-    script.id = "devfolio-script";
-
-    script.onload = () => {
-      console.log("Devfolio SDK loaded:", window.Devfolio);
-      if (window.Devfolio) {
-        document
-          .querySelectorAll(".apply-button")
-          .forEach(btn => window.Devfolio.renderButton(btn));
-        console.log("Devfolio buttons rendered.");
-      }
-    };
-
     document.body.appendChild(script);
-  } else {
-    console.log("Devfolio SDK already present, rendering buttons again.");
-    if (window.Devfolio) {
-      document
-        .querySelectorAll(".apply-button")
-        .forEach(btn => window.Devfolio.renderButton(btn));
-    }
-  }
-}, []);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <div id="landing">
@@ -110,7 +91,7 @@ function LandingPage() {
                   <div
                     className="apply-button hidden sm:block"
                     data-hackathon-slug="code-recet-2"
-                    data-button-theme="light"
+                    data-button-theme="dark"
                     style={{
                       height: "44px",
                       width: "192px",
@@ -199,11 +180,11 @@ function LandingPage() {
             CET<span className="font-satoshi_v">'</span>S BIGGEST <br></br>{" "}
             <span className="text-custom-yellow">HACKATHON</span> IS BACK.
           </h1>
-          <button className="bg-custom-yellow border-2 mt-5 z-30 border-white w-36 h-10 lg:w-48 lg:h-12 rounded-full">
+          {/* <button className="bg-custom-yellow border-2 mt-5 z-30 border-white w-36 h-10 lg:w-48 lg:h-12 rounded-full">
             <p className="text-white text-center font-satoshi_v lg:text-xl">
               REGISTER NOW
             </p>
-          </button>
+          </button> */}
           <img
             className="lg:-mt-48 -mt-20 z-20"
             src={gif}
