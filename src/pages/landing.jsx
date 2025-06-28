@@ -17,11 +17,22 @@ function LandingPage() {
     "CODE RECET",
   ];
   useEffect(() => {
+    // Check if script already exists
+    if (
+      document.querySelector(
+        'script[src="https://apply.devfolio.co/v2/sdk.js"]'
+      )
+    )
+      return;
+
     const script = document.createElement("script");
     script.src = "https://apply.devfolio.co/v2/sdk.js";
     script.async = true;
     script.defer = true;
+    script.onload = () => console.log("Devfolio script loaded successfully");
+    script.onerror = () => console.error("Devfolio script failed to load");
     document.body.appendChild(script);
+
     return () => {
       document.body.removeChild(script);
     };
