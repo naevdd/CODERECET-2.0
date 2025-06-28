@@ -17,14 +17,33 @@ function LandingPage() {
     "CODE RECET",
   ];
   useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://apply.devfolio.co/v2/sdk.js';
+  console.log("Loading Devfolio SDK…");
+  if (!document.getElementById("devfolio-script")) {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
     script.async = true;
     script.defer = true;
+    script.id = "devfolio-script";
+
+    script.onload = () => {
+      console.log("Devfolio SDK loaded:", window.Devfolio);
+      if (window.Devfolio) {
+        document
+          .querySelectorAll(".apply-button")
+          .forEach(btn => window.Devfolio.renderButton(btn));
+        console.log("Devfolio buttons rendered.");
+      }
+    };
+
     document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
+  } else {
+    console.log("Devfolio SDK already present, rendering buttons again.");
+    if (window.Devfolio) {
+      document
+        .querySelectorAll(".apply-button")
+        .forEach(btn => window.Devfolio.renderButton(btn));
     }
+  }
 }, []);
 
   return (
@@ -90,7 +109,7 @@ function LandingPage() {
                 <li className="ml-4 lg:ml-8">
                   <div
                     className="apply-button hidden sm:block"
-                    data-hackathon-slug="coderecet2"
+                    data-hackathon-slug="code-recet-2"
                     data-button-theme="light"
                     style={{
                       height: "44px",
