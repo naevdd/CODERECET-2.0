@@ -17,15 +17,16 @@ function LandingPage() {
     "CODE RECET",
   ];
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    const script = document.createElement('script');
+    script.src = 'https://apply.devfolio.co/v2/sdk.js';
     script.async = true;
     script.defer = true;
     document.body.appendChild(script);
     return () => {
       document.body.removeChild(script);
-    };
-  }, []);
+    }
+}, []);
+
   return (
     <div id="landing">
       <div className="min-h-screen bg-custom-black">
