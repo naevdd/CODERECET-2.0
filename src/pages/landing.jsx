@@ -87,7 +87,7 @@ function LandingPage() {
                     Contact
                   </Link>
                 </li>
-                <li className="ml-4 lg:ml-8">
+                {/* <li className="ml-4 lg:ml-8">
                   <div
                     className="apply-button hidden sm:block"
                     data-hackathon-slug="code-recet-2"
@@ -98,7 +98,7 @@ function LandingPage() {
                       marginRight: "40px",
                     }}
                   ></div>
-                </li>
+                </li> */}
               </ul>
             </div>
 
@@ -191,6 +191,18 @@ function LandingPage() {
             width={748}
             height={748}
           />
+          {/* <div className="mt-6 mb-10 flex justify-center items-center w-full px-4 overflow-x-hidden">
+            <div
+              className="apply-button"
+              data-hackathon-slug="code-recet-2"
+              data-button-theme="dark"
+              style={{
+                height: "44px",
+                width: "100%",
+                maxWidth: "192px",
+              }}
+            ></div>
+          </div> */}
           <div className="lg:h-20 absolute bottom-0 -mt-16 lg:-mt-[18rem] w-full z-10 bg-custom-black inline-flex flex-nowrap border-2 border-l-0 border-r-0 border-custom-gray">
             <div className="overflow-hidden relative">
               <div className="flex animate-infinite-scroll space-x-16 sm:space-x-36 p-2">
