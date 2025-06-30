@@ -68,18 +68,7 @@ const countdown = () => {
 
       <div className="w-full gap-20 flex flex-col">
         <div className="lg:mt-64 mt-36 px-8 lg:px-64">
-          <div className="flex justify-center items-center w-full mb-6 px-4">
-            <div
-              className="apply-button"
-              data-hackathon-slug="code-recet-2"
-              data-button-theme="dark"
-              style={{
-                height: "44px",
-                width: "192px",
-                maxWidth: "100%",
-              }}
-            ></div>
-          </div>
+          
           <h1
             className="font-satoshi_v text-white text-center 
                     lg:text-5xl text-xl"
