@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import gif from "../assets/cube_float1 1.gif";
 import logo from "../assets/logo.png";
@@ -16,15 +16,16 @@ function LandingPage() {
     "CODE RECET",
     "CODE RECET",
   ];
+
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    const script = document.createElement('script');
+    script.src = 'https://apply.devfolio.co/v2/sdk.js';
     script.async = true;
     script.defer = true;
     document.body.appendChild(script);
     return () => {
       document.body.removeChild(script);
-    };
+    }
   }, []);
 
   return (
@@ -42,7 +43,7 @@ function LandingPage() {
         </div>
         <div className="flex justify-center">
           <nav className="flex mt-10 w-full z-50">
-            <div className="lg:w-48 lg:ml-10 ml-2 cursor-pointer">
+            <div className="lg:w-48 lg:ml-10 ml-2 absolute cursor-pointer">
               <img src={logo} width={100} height={100} />
             </div>
             <div className="w-full">
@@ -87,21 +88,8 @@ function LandingPage() {
                     Contact
                   </Link>
                 </li>
-                {/* <li className="ml-4 lg:ml-8">
-                  <div
-                    className="apply-button hidden sm:block"
-                    data-hackathon-slug="code-recet-2"
-                    data-button-theme="dark"
-                    style={{
-                      height: "44px",
-                      width: "192px",
-                      marginRight: "40px",
-                    }}
-                  ></div>
-                </li> */}
               </ul>
             </div>
-
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="inline-block sm:hidden text-white z-50 focus:outline-none"
@@ -110,9 +98,6 @@ function LandingPage() {
                 <img src={isOpen ? close : menu} className="w-6 h-6" />
               </div>
             </button>
-            {/* <button className="sm:block hidden bg-custom-yellow lg:w-48 lg:h-12 rounded-full mr-10">
-              <p className="text-white font-satoshi_v lg:text-xl">REGISTER</p>
-            </button> */}
             <div
               className={`sm:hidden fixed top-0 left-0 h-screen w-[60%] bg-custom-black z-40 shadow-lg transform transition-transform duration-300 ${
                 isOpen ? "translate-x-0" : "-translate-x-full"
@@ -174,19 +159,25 @@ function LandingPage() {
         </div>
         <div className="flex flex-col items-center">
           <h1
-            className="text-white z-10 lg:mt-24 mt-20 font-seasons_r text-5xl lg:text-8xl text-center
+            className="text-white z-10 lg:mt-32 mt-20 font-seasons_r text-5xl lg:text-8xl text-center
                   "
           >
             CET<span className="font-satoshi_v">'</span>S BIGGEST <br></br>{" "}
             <span className="text-custom-yellow">HACKATHON</span> IS BACK.
           </h1>
-          {/* <button className="bg-custom-yellow border-2 mt-5 z-30 border-white w-36 h-10 lg:w-48 lg:h-12 rounded-full">
-            <p className="text-white text-center font-satoshi_v lg:text-xl">
-              REGISTER NOW
-            </p>
-          </button> */}
+          <div className="z-30 lg:mt-10 mt-5">
+          <div
+            className="apply-button hidden sm:block"
+            data-hackathon-slug="code-recet-2"
+            data-button-theme="dark"
+            style={{
+              height: "44px",
+              width: "312px"
+            }}
+          ></div>
+          </div>
           <img
-            className="lg:-mt-48 -mt-20 z-20"
+            className="lg:-mt-32 -mt-14 z-20"
             src={gif}
             width={748}
             height={748}
