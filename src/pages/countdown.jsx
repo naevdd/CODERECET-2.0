@@ -54,7 +54,7 @@ const countdown = () => {
   return (
     <div id="countdown" className="bg-custom-black px-3 lg:px-14">
       <div className="w-full flex justify-center items-center pt-20 pb-4">
-        <div
+        {/* <div
           className="apply-button"
           data-hackathon-slug="code-recet-2"
           data-button-theme="dark"
@@ -63,7 +63,7 @@ const countdown = () => {
             width: "192px",
             maxWidth: "100%",
           }}
-        ></div>
+        ></div> */}
       </div>
 
       <div className="w-full gap-20 flex flex-col">
