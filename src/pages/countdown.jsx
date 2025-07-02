@@ -33,16 +33,42 @@ const countdown = () => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
   useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
+  useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
     return () => clearInterval(timer);
   }, []);
+  
 
   return (
     <div id="countdown" className="bg-custom-black px-3 lg:px-14">
+      <div className="w-full flex justify-center items-center pt-20 pb-4">
+        {/* <div
+          className="apply-button"
+          data-hackathon-slug="code-recet-2"
+          data-button-theme="dark"
+          style={{
+            height: "44px",
+            width: "192px",
+            maxWidth: "100%",
+          }}
+        ></div> */}
+      </div>
+
       <div className="w-full gap-20 flex flex-col">
         <div className="lg:mt-64 mt-36 px-8 lg:px-64">
+          
           <h1
             className="font-satoshi_v text-white text-center 
                     lg:text-5xl text-xl"
@@ -51,9 +77,7 @@ const countdown = () => {
             36-hour hackathon
           </h1>
         </div>
-        <div
-          className="bg-custom-yellow flex justify-center items-center rounded-xl mx-auto w-full text-black h-40 sm:h-48 md:h-56 lg:h-72 mb-6"
-        >
+        <div className="bg-custom-yellow flex justify-center items-center rounded-xl mx-auto w-full text-black h-40 sm:h-48 md:h-56 lg:h-72 mb-6">
           <div className="flex flex-row lg:space-x-9 space-x-2 lg:mb-4 mb-0 text-6xl lg:text-[230px] font-bebas_neue">
             <div className="text-center">
               <span>{timeLeft.days}</span>
