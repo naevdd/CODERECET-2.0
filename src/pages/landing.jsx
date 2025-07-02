@@ -43,7 +43,7 @@ function LandingPage() {
         </div>
         <div className="flex justify-center">
           <nav className="flex mt-10 w-full z-50">
-            <div className="lg:w-48 lg:ml-10 ml-2 absolute cursor-pointer">
+            <div className="lg:w-48 lg:ml-10 ml-3 -mt-2 absolute cursor-pointer">
               <img src={logo} width={100} height={100} />
             </div>
             <div className="w-full">
@@ -94,7 +94,7 @@ function LandingPage() {
               onClick={() => setIsOpen(!isOpen)}
               className="inline-block sm:hidden text-white z-50 focus:outline-none"
             >
-              <div className="w-10 h-10 bg-custom-black rounded-sm flex items-center justify-center mr-[24px] -mt-5">
+              <div className="w-10 h-10 bg-custom-black rounded-sm flex items-center justify-center mr-[20px] -mt-1">
                 <img src={isOpen ? close : menu} className="w-6 h-6" />
               </div>
             </button>
@@ -177,11 +177,23 @@ function LandingPage() {
           ></div>
           </div>
           <img
-            className="lg:-mt-32 -mt-14 z-20"
+            className="lg:-mt-32 -mt-16 z-20"
             src={gif}
             width={748}
             height={748}
           />
+          <div className="sm:hidden -mt-12  z-30">
+            <div
+              className="apply-button"
+              data-hackathon-slug="code-recet-2"
+              data-button-theme="dark"
+              style={{
+                height: "44px",
+                width: "312px",
+                margin: "0 auto",
+              }}
+            ></div>
+          </div>
           <div className="lg:h-20 absolute bottom-0 -mt-16 lg:-mt-[18rem] w-full z-10 bg-custom-black inline-flex flex-nowrap border-2 border-l-0 border-r-0 border-custom-gray">
             <div className="overflow-hidden relative">
               <div className="flex animate-infinite-scroll space-x-16 sm:space-x-36 p-2">
