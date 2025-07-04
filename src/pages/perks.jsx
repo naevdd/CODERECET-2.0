@@ -113,7 +113,7 @@ const PerkCard = ({ title, description, image }) => {
       <motion.div
         className="relative w-full h-full rounded-[12px] shadow-lg border-2 border-custom-yellow "
         animate={{ rotateY: isFlipped ? 180 : 0 }}
-        transition={{ duration: 0.6, ease: "easeOut", type: "tween" }}
+        transition={{ duration: 1.2, ease: "easeOut", type: "tween" }}
         style={{ transformStyle: "preserve-3d" }}
       >
         {/* Front */}
