@@ -1,5 +1,5 @@
-import { motion, useInView } from "framer-motion";
-import { useState, useEffect, useRef } from "react";
+import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 import gif from "../assets/cube_float1 1.gif";
 
 const PerksSection = () => {
@@ -40,7 +40,6 @@ const PerksSection = () => {
             title={perk.title}
             description={perk.description}
             image={perk.image}
-            index={index}
           />
         ))}
       </div>
@@ -48,39 +47,25 @@ const PerksSection = () => {
   );
 };
 
-const PerkCard = ({ title, description, image, index }) => {
+const PerkCard = ({ title, description, image }) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [hasFlippedThisHover, setHasFlippedThisHover] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-  const cardRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
+  const [isMobile, setIsMobile]=useState(false);
 
-  const isInView = useInView(cardRef, {
-    margin: "0px 0px -50px 0px",
-    amount: 0.3,
-  });
-
-  useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
+  useEffect(()=>{
+    const checkMobile=()=>{
+      setIsMobile(window.innerWidth<768);
     };
     checkMobile();
     window.addEventListener("resize", checkMobile);
-    return () => window.removeEventListener("resize", checkMobile);
-  }, []);
+    return ()=> window.removeEventListener("resize", checkMobile);
+  },[]);
 
-  useEffect(() => {
-    if (!isMobile) return;
-
-    if (isInView && !isVisible) {
-      setIsFlipped(true);
-      setIsVisible(true);
-    } else if (!isInView && isVisible) {
-      setIsFlipped(false);
-      setIsVisible(false);
+  const handleCardClick=()=>{
+    if(isMobile){
+      setIsFlipped((prev)=>!prev);
     }
-  }, [isInView, isMobile, isVisible]);
-
+  };
   const backgroundColor =
     title === "REGISTER"
       ? "bg-custom-yellow"
@@ -110,8 +95,8 @@ const PerkCard = ({ title, description, image, index }) => {
 
   return (
     <motion.div
-      ref={cardRef}
       className="relative w-full h-[450px] sm:h-[450px] md:h-[500px] lg:h-[550px] xl:h-[600px] perspective-1000 cursor-pointer"
+      onClick={handleCardClick}
       onHoverStart={() => {
         if (!isMobile && !hasFlippedThisHover) {
           setIsFlipped((prev) => !prev);
@@ -119,32 +104,22 @@ const PerkCard = ({ title, description, image, index }) => {
         }
       }}
       onHoverEnd={() => {
-        if (!isMobile) {
+        if(!isMobile){
           setHasFlippedThisHover(false);
         }
-      }}
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{
-        duration: 0.5,
-        delay: isMobile ? index * 0.1 : 0,
+        
       }}
     >
       <motion.div
-        className="relative w-full h-full rounded-[12px] shadow-lg border-2 border-custom-yellow"
+        className="relative w-full h-full rounded-[12px] shadow-lg border-2 border-custom-yellow "
         animate={{ rotateY: isFlipped ? 180 : 0 }}
-        transition={{
-          type: "tween",
-          duration: 1.2, 
-          ease: "easeInOut",
-          delay: isMobile ? index * 0.1 : 0,
-        }}
-        style={{
-          transformStyle: "preserve-3d",
-          willChange: "transform",
-        }}
+        transition={{ duration: 0.6, ease: "easeOut", type: "tween" }}
+        style={{ transformStyle: "preserve-3d" }}
       >
+        {/* Front */}
         <CardFace />
+
+        {/* Back */}
         <CardFace isBack={true} />
       </motion.div>
     </motion.div>
