@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import gif from "../assets/cube_float1 1.gif";
 
 const PerksSection = () => {
@@ -50,6 +50,22 @@ const PerksSection = () => {
 const PerkCard = ({ title, description, image }) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [hasFlippedThisHover, setHasFlippedThisHover] = useState(false);
+  const [isMobile, setIsMobile]=useState(false);
+
+  useEffect(()=>{
+    const checkMobile=()=>{
+      setIsMobile(window.innerWidth<768);
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return ()=> window.removeEventListener("resize", checkMobile);
+  },[]);
+
+  const handleCardClick=()=>{
+    if(isMobile){
+      setIsFlipped((prev)=>!prev);
+    }
+  };
   const backgroundColor =
     title === "REGISTER"
       ? "bg-custom-yellow"
@@ -80,21 +96,24 @@ const PerkCard = ({ title, description, image }) => {
   return (
     <motion.div
       className="relative w-full h-[450px] sm:h-[450px] md:h-[500px] lg:h-[550px] xl:h-[600px] perspective-1000 cursor-pointer"
+      onClick={handleCardClick}
       onHoverStart={() => {
-        if (!hasFlippedThisHover) {
+        if (!isMobile && !hasFlippedThisHover) {
           setIsFlipped((prev) => !prev);
           setHasFlippedThisHover(true);
         }
       }}
       onHoverEnd={() => {
-        setHasFlippedThisHover(false);
+        if(!isMobile){
+          setHasFlippedThisHover(false);
+        }
+        
       }}
     >
       <motion.div
         className="relative w-full h-full rounded-[12px] shadow-lg border-2 border-custom-yellow "
         animate={{ rotateY: isFlipped ? 180 : 0 }}
         transition={{ duration: 0.6, ease: "easeOut", type: "tween" }}
-        onAnimationComplete={() => setIsAnimating(false)}
         style={{ transformStyle: "preserve-3d" }}
       >
         {/* Front */}
