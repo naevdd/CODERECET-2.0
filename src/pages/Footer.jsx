@@ -65,14 +65,14 @@ function Footer() {
 
               {/* Dropdown */}
               {showContacts && (
-                <div className="pl-8 pt-2 space-y-1 transition-all duration-300 ease-in-out text-[18px] font-poppins">
+                <div className="pl-8 pt-2 space-y-1 transition-all duration-300 ease-in-out text-[16px] font-poppins">
                   <div>
                     <span className="font-semibold">Niyas:</span> +91 77363
                     48128
                   </div>
                   <div>
-                    <span className="font-semibold">Josin:</span> +91 94479
-                    63228
+                    <span className="font-semibold">Ananthu:</span> +91 97611
+                    74092
                   </div>
                 </div>
               )}
