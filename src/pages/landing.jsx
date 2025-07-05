@@ -33,12 +33,12 @@ function LandingPage() {
       <div className="min-h-screen bg-custom-black">
         <div className="justify-center flex">
           <div className="flex h-full gap-24 lg:gap-64 absolute">
-            <div className="w-[1px] bg-custom-gray"></div>
-            <div className="w-[1px] bg-custom-gray"></div>
-            <div className="w-[1px] bg-custom-gray"></div>
-            <div className="w-[1px] bg-custom-gray"></div>
-            <div className="sm:block hidden w-[1px] bg-custom-gray"></div>
-            <div className="sm:block hidden w-[1px] bg-custom-gray"></div>
+            <div className="w-[1px] bg-custom-gray opacity-20"></div>
+            <div className="w-[1px] bg-custom-gray opacity-20"></div>
+            <div className="w-[1px] bg-custom-gray opacity-20"></div>
+            <div className="w-[1px] bg-custom-gray opacity-20"></div>
+            <div className="sm:block hidden w-[1px] bg-custom-gray opacity-50"></div>
+            <div className="sm:block hidden w-[1px] bg-custom-gray opacity-50"></div>
           </div>
         </div>
         <div className="flex justify-center">
