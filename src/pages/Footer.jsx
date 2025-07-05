@@ -22,7 +22,7 @@ function Footer() {
     >
       <div className="bg-custom-yellow md:w-[1300px] md:h-[560px] md:rounded-2xl rounded-2xl rounded-b-none w-[380px] h-[510px]">
         <div className="flex md:justify-start justify-center items-center md:pt-10 md:pl-20 md:h-[150px] h-[120px] w-full md:w-auto pl-4 pt-2">
-          <img src={logo} className="md:w-20 md:h-20 w-20 h-20" />
+          <img src={logo} className="md:w-20 md:h-20 w-20 h-20 mr-2 md:mr-0" />
         </div>
         <div className="w-128 h-[1px] bg-black md:mx-20 mx-30"></div>
         <div className="flex md:flex-row md:gap-96 md:justify-center flex-col gap-8 md:mx-auto md:h-[200px] pt-8 md:pt-0">
@@ -43,7 +43,7 @@ function Footer() {
                 </div>
               </a>
             </div>
-            
+
             <div className=" flex flex-row md:pl-0 pl-4">
               <span className="text-2xl font-poppins">&gt;</span>
               <a href="#gallery" className="block">
@@ -97,7 +97,11 @@ function Footer() {
             rel="noopener noreferrer"
             className="transition hover:brightness-200"
           >
-            <img src={instagram} alt="Instagram" className="w-14 h-14" />
+            <img
+              src={instagram}
+              alt="Instagram"
+              className="w-10 h-10 md:w-14 md:h-14"
+            />
           </a>
         </div>
       </div>

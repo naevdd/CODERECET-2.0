@@ -6,16 +6,6 @@ function Sponsors() {
   return (
     <div id="sponsors">
       <div className="relative bg-custom-black border-custom-gray border-t border-b text-custom-white py-12 px-6 md:px-20 flex flex-col items-center">
-        {/* Vertical lines background */}
-        <div className="flex h-full gap-24 lg:gap-64 absolute">
-          <div className="w-[1px] bg-custom-gray opacity-10"></div>
-          <div className="w-[1px] bg-custom-gray opacity-10"></div>
-          <div className="w-[1px] bg-custom-gray opacity-10"></div>
-          <div className="w-[1px] bg-custom-gray opacity-10"></div>
-          <div className="sm:block hidden w-[1px] bg-custom-gray opacity-30"></div>
-          <div className="sm:block hidden w-[1px] bg-custom-gray opacity-30"></div>
-        </div>
-
         {/* Our Sponsors Section */}
         <h2 className="text-center text-5xl md:text-7xl font-seasons_r mb-6">
           OUR <span className="text-custom-yellow">SPONSORS</span>.
@@ -30,7 +20,7 @@ function Sponsors() {
               <img
                 src={devfolio}
                 alt="DEVFOLIO LOGO"
-                className="max-h-16 md:max-h-20 object-contain"
+                className="max-h-12 md:max-h-20 object-contain"
               />
             </a>
           </div>
@@ -52,7 +42,7 @@ function Sponsors() {
               <img
                 src={ethindia}
                 alt="ETHINDIA LOGO"
-                className="max-h-16 md:max-h-20 object-contain"
+                className="max-h-12 md:max-h-20 object-contain"
               />
             </a>
           </div>
