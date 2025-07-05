@@ -49,7 +49,6 @@ const countdown = () => {
     }, 1000);
     return () => clearInterval(timer);
   }, []);
-  
 
   return (
     <div id="countdown" className="bg-custom-black px-3 lg:px-14">
@@ -68,7 +67,6 @@ const countdown = () => {
 
       <div className="w-full gap-20 flex flex-col">
         <div className="lg:mt-64 mt-36 px-8 lg:px-64">
-          
           <h1
             className="font-satoshi_v text-white text-center 
                     lg:text-5xl text-xl"
@@ -77,7 +75,7 @@ const countdown = () => {
             36-hour hackathon
           </h1>
         </div>
-        <div className="bg-custom-yellow flex justify-center items-center rounded-xl mx-auto w-full text-black h-40 sm:h-48 md:h-56 lg:h-72 mb-6">
+        <div className="bg-custom-yellow flex justify-center items-center rounded-xl mx-4 lg:mx-8 w-auto text-black h-40 sm:h-48 md:h-56 lg:h-72 mb-6">
           <div className="flex flex-row lg:space-x-9 space-x-2 lg:mb-4 mb-0 text-6xl lg:text-[230px] font-bebas_neue">
             <div className="text-center">
               <span>{timeLeft.days}</span>
