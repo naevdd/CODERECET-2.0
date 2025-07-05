@@ -33,7 +33,17 @@ const PerksSection = () => {
   return (
     <section className="relative overflow-hidden flex justify-center items-center py-10 mb-[12px] px-4 sm:px-[22px]">
       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full max-w-[1440px] border-custom-gray opacity-50"></div>
-      <div className="w-full max-w-[1440px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 px-8 sm:px-0">
+      <div
+        className="w-full max-w-[1440px] mx-auto
+  grid
+  grid-cols-1
+  md:grid-cols-2
+  xl:grid-cols-4
+  gap-y-8
+  md:gap-x-1
+  xl:gap-x-8
+  px-8 sm:px-0"
+      >
         {perks.map((perk, index) => (
           <PerkCard
             key={index}
@@ -50,20 +60,20 @@ const PerksSection = () => {
 const PerkCard = ({ title, description, image }) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [hasFlippedThisHover, setHasFlippedThisHover] = useState(false);
-  const [isMobile, setIsMobile]=useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(()=>{
-    const checkMobile=()=>{
-      setIsMobile(window.innerWidth<768);
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
     };
     checkMobile();
     window.addEventListener("resize", checkMobile);
-    return ()=> window.removeEventListener("resize", checkMobile);
-  },[]);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
-  const handleCardClick=()=>{
-    if(isMobile){
-      setIsFlipped((prev)=>!prev);
+  const handleCardClick = () => {
+    if (isMobile) {
+      setIsFlipped((prev) => !prev);
     }
   };
   const backgroundColor =
@@ -79,15 +89,15 @@ const PerkCard = ({ title, description, image }) => {
         backfaceVisibility: "hidden",
       }}
     >
-      <h3 className="text-custom-white font-seasons_r text-[36px] lg:text-[40px] mb-4 h-[40px] flex items-center mt-4 sm:mt-6">
+      <h3 className="text-custom-white font-seasons_r text-[36px] lg:text-[40px] mb-4 h-[40px] flex items-center mt-2 sm:mt-6">
         {title}
       </h3>
 
-      <div className="w-[200px] h-[200px] sm:w-[220px] sm:h-[220px] md:w-[240px] md:h-[240px] lg:w-[260px] lg:h-[260px] flex justify-center items-center mb-4">
+      <div className="w-[240px] h-[240px] sm:w-[260px] sm:h-[260px] md:w-[280px] md:h-[280px] lg:w-[300px] lg:h-[300px] flex justify-center items-center mb-2 -mt-5">
         <img src={image} alt={title} className="w-full h-full object-contain" />
       </div>
 
-      <p className="text-custom-white font-satoshi_v text-[16px] sm:text-[18px] flex-grow flex items-center px-2 text-center">
+      <p className="text-custom-white font-satoshi_v text-[18px] sm:text-[20px] flex-grow flex items-center px-2 text-center -mt-2">
         {description}
       </p>
     </div>
@@ -95,7 +105,7 @@ const PerkCard = ({ title, description, image }) => {
 
   return (
     <motion.div
-      className="relative w-full h-[450px] sm:h-[450px] md:h-[500px] lg:h-[550px] xl:h-[600px] perspective-1000 cursor-pointer"
+      className="relative w-full max-w-[350px] mx-auto h-[450px] sm:h-[450px] md:h-[500px] lg:h-[550px] xl:h-[600px] perspective-1000 cursor-pointer"
       onClick={handleCardClick}
       onHoverStart={() => {
         if (!isMobile && !hasFlippedThisHover) {
@@ -104,10 +114,9 @@ const PerkCard = ({ title, description, image }) => {
         }
       }}
       onHoverEnd={() => {
-        if(!isMobile){
+        if (!isMobile) {
           setHasFlippedThisHover(false);
         }
-        
       }}
     >
       <motion.div
