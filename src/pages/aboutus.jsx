@@ -9,10 +9,11 @@ function AboutUs() {
   return (
     <div
       id="about"
-      className="min-h-screen bg-custom-black border-custom-gray border-b relative flex flex-col lg:grid lg:grid-cols-12 lg:p-6 lg:pr-20 lg:pl-10 overflow-hidden max-w-full"
+      className="min-h-screen bg-custom-black border-custom-gray border-b flex lg:flex-row flex-col
+       space-x-36 justify-center items-center mx-auto max-w-full"
     >
       {/* Left Text Section */}
-      <div className="w-full lg:col-span-5 lg:col-start-2 pt-10 p-4 pl-6 lg:pl-0 ">
+      <div className="">
         <h1 className="text-custom-white text-5xl font-seasons_r">What is</h1>
         <h1 className="text-custom-yellow text-5xl font-seasons_r">
           Code ReCET <span className="text-custom-white">?</span>
@@ -82,55 +83,46 @@ function AboutUs() {
       </div>
 
       {/* Right Side - Images and Register Section */}
-      <div className="lg:col-span-5 lg:col-start-8 relative flex w-full mt-28 lg:mt-0 pb-4 -ml-4 lg:ml-0 mb-2 lg:mb-0 justify-center items-center">
+      <div className="flex justify-center items-center w-full lg:w-auto mt-10 lg:mt-0">
         {/* Background Images */}
-        <div className="absolute w-[500px] lg:w-[800px] min-h-full">
+        <div className="absolute w-[90%] lg:w-[800px] min-h-full">
           <img
             src={imgtop}
-            className="absolute w-[400px] lg:w-[500px] -mt-36 lg:mt-0 z-1 mix-blend-screen"
+            className="absolute w-[300px] lg:w-[500px] z-1 mix-blend-screen"
           />
           <img
             src={imgtop}
-            className="absolute w-[370px] lg:w-[600px] mt-28 lg:mt-56 ml-36 lg:ml-52 z-0 mix-blend-screen"
+            className="absolute w-[270px] lg:w-[600px] mt-32 ml-20 lg:mt-56 lg:ml-52 z-0 mix-blend-screen"
           />
-        </div>
-
-        {/* Floating GIF */}
-        <div className="absolute z-40 w-24 mr-[272px] mt-[210px]">
-          <img src={gif} />
         </div>
 
         {/* Card Section */}
-        <div className="relative flex items-center">
-          {/* Front Card */}
-          <div className="relative z-20  lg:ml-[46px]">
-            <div
-              className="w-80 p-5 rounded-lg border-2 border-custom-yellow 
-                bg-[linear-gradient(to_bottom,#565D60_1%,#000000_100%)] 
-                flex flex-col justify-center items-center shadow-lg"
-            >
-              <img src={image} className="w-full" />
+        <div className="relative w-[280px] sm:w-[320px] lg:w-[400px] h-[440px] sm:h-[480px] lg:h-[600px]">
+          {/* Background Yellow Box */}
+          <div className="absolute z-10 w-full h-full rounded-2xl bg-custom-yellow translate-x-4 -translate-y-4"></div>
 
-              <div className="font-seasons_r mt-5 mb-5 text-[18px] flex flex-col items-center">
-                <h2 className="text-custom-white">
-                  REFRESH <span className="text-custom-yellow">IDEAS</span>
-                </h2>
-                <h2 className="text-custom-white">
-                  REBOOT <span className="text-custom-yellow">SOLUTIONS</span>
-                </h2>
-              </div>
-
-              <button className="w-full flex items-center justify-center p-3 rounded-lg bg-custom-yellow font-seasons_r text-2xl hover:bg-yellow-700 hover:scale-110 transition-all ease-in-out">
-                Register Now <img src={arrow} className="ml-2 w-5 h-4" />
-              </button>
-            </div>
+          {/* Floating GIF */}
+          <div className="absolute z-40 w-20 sm:w-24 top-1/2 -left-12 -translate-y-1/2">
+            <img src={gif} />
           </div>
 
-          {/* Background Yellow Box */}
-          <div
-            className="absolute z-10 w-80 h-[460px] rounded-lg bg-custom-yellow 
-              -translate-y-8 translate-x-7 opacity-100 lg:ml-[46px]"
-          ></div>
+          {/* Front Card */}
+          <div className="absolute z-20 w-full h-full rounded-2xl border border-[#FFD700] shadow-lg bg-[linear-gradient(to_bottom,#565D60_1%,#000000_100%)] flex flex-col items-center justify-between p-5">
+            <img src={image} className="w-full rounded-md" />
+
+            <div className="font-seasons_r text-center mt-5 text-[16px] sm:text-[18px]">
+              <h2 className="text-custom-white">
+                REFRESH <span className="text-custom-yellow">IDEAS</span>
+              </h2>
+              <h2 className="text-custom-white">
+                REBOOT <span className="text-custom-yellow">SOLUTIONS</span>
+              </h2>
+            </div>
+
+            <button className="w-full mt-5 flex items-center justify-center p-3 rounded-lg bg-custom-yellow text-black font-seasons_r text-lg sm:text-xl hover:bg-yellow-700 hover:scale-105 transition-all ease-in-out">
+              Register Now <img src={arrow} className="ml-2 w-5 h-4" />
+            </button>
+          </div>
         </div>
       </div>
     </div>
