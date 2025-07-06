@@ -1,7 +1,7 @@
 import React from "react";
 import devfolio from "../assets/Devfolio_Logo-White.svg";
 import ethindia from "../assets/ethindia-light.svg";
-import cetaa from "../assets/CETA UAE LOGO.png"
+//import cetaa from "../assets/CETA UAE LOGO.png"
 
 function Sponsors() {
   return (
