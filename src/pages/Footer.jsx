@@ -81,6 +81,23 @@ function Footer() {
               )}
             </div>
           </div>
+
+          {/* Registration Button */}
+          <div className="flex justify-center items-center md:items-start md:pt-10">
+            <div className="mt-6 mb-10 flex justify-center items-center w-full px-4 overflow-x-hidden">
+              <div
+                className="apply-button"
+                data-hackathon-slug="code-recet-2"
+                data-button-theme="dark-inverted"
+                style={{
+                  height: "44px",
+                  width: "100%",
+                  maxWidth: "192px",
+                }}
+              ></div>
+            </div>
+          </div>
+
           <div className="flex justify-center mx-auto items-center md:items-end md:flex-col flex-row md:gap-6 md:h-[260px] h-[40px] w-full md:w-auto gap-x-8 mt-8 md:mt-4 lg:-mr-0">
             <div className="hidden md:block text-2xl text-custom-black font-poppins text-right">
               Hackathon organized by:
