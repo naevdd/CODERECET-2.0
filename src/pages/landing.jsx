@@ -166,22 +166,22 @@ function LandingPage() {
         </div>
         <div className="flex flex-col items-center">
           <h1
-            className="text-custom-white z-10 lg:mt-32 mt-20 font-seasons_r text-5xl lg:text-8xl text-center
+            className="text-custom-white z-10 lg:mt-32 mt-12 font-seasons_r text-5xl lg:text-8xl text-center
                   "
           >
             CET<span className="font-satoshi_v">'</span>S BIGGEST <br></br>{" "}
             <span className="text-custom-yellow">HACKATHON</span> IS BACK.
           </h1>
-          <div className="hidden sm:block z-30 mt-5 lg:mt-10">
+          <div className="hidden sm:block z-30 lg:mt-10">
             <RegisterButton />
           </div>
           <img
-            className="lg:-mt-32 -mt-14 z-20"
+            className="lg:-mt-32 -mt-20 z-20"
             src={gif}
             width={748}
             height={748}
           />
-          <div className="sm:hidden mt-4 z-30">
+          <div className="sm:hidden -mt-4 z-30">
             <RegisterButton />
           </div>
           {/* <div className="mt-6 mb-10 flex justify-center items-center w-full px-4 overflow-x-hidden">

@@ -9,8 +9,8 @@ export default function RegisterButton({ className = "" }) {
       onClick={handleClick}
       className={`bg-[#d58f15] relative rounded-[30px] cursor-pointer transition-all duration-300 ease-in-out group px-6 sm:px-8 ${className}`}
       style={{
-        height: "60px",
-        width: "240px",
+        height: "50px",
+        width: "200px",
       }}
     >
       <div className="overflow-clip relative size-full">
