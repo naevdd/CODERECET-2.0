@@ -42,9 +42,9 @@ function LandingPage() {
           </div>
         </div>
         <div className="flex justify-center">
-          <nav className="flex mt-10 w-full z-50">
+          <nav className="flex mt-16 w-full z-50">
             <div className="lg:w-48 lg:ml-10 ml-2 absolute cursor-pointer">
-              <img src={logo} width={100} height={100} />
+              <img src={logo} className="w-12 h-12 ml-2 -mt-4 sm:w-20 sm:h-20 lg:w-[100px] lg:h-[100px]" />
             </div>
             <div className="w-full">
               <ul className="sm:flex hidden w-full lg:text-xl font-satoshi_v space-x-2 lg:space-x-20 text-white justify-center items-center">

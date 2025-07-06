@@ -10,15 +10,15 @@ function AboutUs() {
     <div
       id="about"
       className="min-h-screen bg-custom-black border-custom-gray border-b flex lg:flex-row flex-col
-       space-x-36 justify-center items-center mx-auto max-w-full"
+       lg:space-x-36 justify-center items-center mx-auto max-w-full px-4 lg:px-8 py-8 lg:py-0 overflow-hidden"
     >
       {/* Left Text Section */}
-      <div className="">
+      <div className="w-full lg:w-auto px-2 lg:px-0">
         <h1 className="text-custom-white text-5xl font-seasons_r">What is</h1>
         <h1 className="text-custom-yellow text-5xl font-seasons_r">
           Code ReCET <span className="text-custom-white">?</span>
         </h1>
-        <h2 className="text-custom-white text-[17px] pr-4 font-satoshi_v mt-3 w-[350px] lg:w-[500px]">
+        <h2 className="text-custom-white text-[17px] pr-4 font-satoshi_v mt-3 w-full max-w-[350px] lg:max-w-[500px]">
           Code ReCET is a 36-hour hackathon that blends innovation, creativity,
           and pure coding bliss! Conducted collaboratively by TinkerHub CET and
           IET on campus CET, this hackathon is set to ignite the tech spirit at
@@ -72,7 +72,7 @@ function AboutUs() {
               <img src={star} className="w-6 h-6 " />
               <div
                 className="p-2 text-white border border-custom-yellow 
-                bg-[linear-gradient(to_bottom,#565D60_1%,#000000_100%)] rounded-md lg:w-[380px] w-[300px]"
+                bg-[linear-gradient(to_bottom,#565D60_1%,#000000_100%)] rounded-md w-full max-w-[300px] lg:max-w-[380px]"
               >
                 <h2 className="font-seasons_r text-[15px]">{item.title}</h2>
                 <h2 className="font-satoshi_v text-[14px]">{item.desc}</h2>
@@ -83,26 +83,26 @@ function AboutUs() {
       </div>
 
       {/* Right Side - Images and Register Section */}
-      <div className="flex justify-center items-center w-full lg:w-auto mt-10 lg:mt-0">
+      <div className="flex justify-center items-center w-full lg:w-auto mt-10 lg:mt-0 relative">
         {/* Background Images */}
-        <div className="absolute w-[90%] lg:w-[800px] min-h-full">
+        <div className="absolute w-[80%] sm:w-[90%] lg:w-[800px] min-h-full pointer-events-none">
           <img
             src={imgtop}
-            className="absolute w-[300px] lg:w-[500px] z-1 mix-blend-screen"
+            className="absolute w-[250px] sm:w-[300px] lg:w-[500px] z-1 mix-blend-screen opacity-60"
           />
           <img
             src={imgtop}
-            className="absolute w-[270px] lg:w-[600px] mt-32 ml-20 lg:mt-56 lg:ml-52 z-0 mix-blend-screen"
+            className="absolute w-[220px] sm:w-[270px] lg:w-[600px] mt-24 ml-12 sm:mt-32 sm:ml-20 lg:mt-56 lg:ml-52 z-0 mix-blend-screen opacity-60"
           />
         </div>
 
         {/* Card Section */}
-        <div className="relative w-[280px] sm:w-[320px] lg:w-[400px] h-[440px] sm:h-[480px] lg:h-[600px]">
+        <div className="relative w-[280px] sm:w-[320px] lg:w-[400px] h-[440px] sm:h-[480px] lg:h-[600px] mx-8 lg:mx-0">
           {/* Background Yellow Box */}
-          <div className="absolute z-10 w-full h-full rounded-2xl bg-custom-yellow translate-x-4 -translate-y-4"></div>
+          <div className="absolute z-10 w-full h-full rounded-2xl bg-custom-yellow translate-x-3 sm:translate-x-4 -translate-y-4"></div>
 
           {/* Floating GIF */}
-          <div className="absolute z-40 w-20 sm:w-24 top-1/2 -left-12 -translate-y-1/2">
+          <div className="absolute z-40 w-16 sm:w-20 lg:w-24 top-1/2 -left-8 sm:-left-10 lg:-left-12 -translate-y-1/2">
             <img src={gif} />
           </div>
 

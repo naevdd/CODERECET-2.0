@@ -28,11 +28,11 @@ function Sponsors() {
               <img
                 src={devfolio}
                 alt="DEVFOLIO LOGO"
-                className="max-h-16 md:max-h-20 object-contain"
+                className="max-h-12 md:max-h-20 object-contain"
               />
             </a>
           </div>
-          
+
           <div className="border border-custom-yellow rounded-[15px] p-6 h-14 md:h-18 w-full"></div>
         </div>
 
@@ -50,7 +50,7 @@ function Sponsors() {
               <img
                 src={ethindia}
                 alt="ETHINDIA LOGO"
-                className="max-h-16 md:max-h-20 object-contain"
+                className="max-h-12 md:max-h-20 object-contain"
               />
             </a>
           </div>
