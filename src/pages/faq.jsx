@@ -4,9 +4,9 @@ const Gallery = () => {
   return (
     <div
       id="gallery"
-      className="bg-custom-black p-8 flex flex-col items-center min-h-screen md:pt-20 pt-10"
+      className="bg-custom-black p-12 md:p-16 flex flex-col items-center min-h-screen md:pt-28 pt-16"
     >
-      <h1 className="text-custom-white font-seasons_r text-center text-[48px]">
+      <h1 className="text-custom-white font-seasons_r text-center text-5xl md:text-7xl">
         FREQUENTLY <span className="text-custom-yellow">ASKED QUESTIONS</span>.
       </h1>
       <div className="md:flex md:flex-row flex-col my-auto items-center gap-1 group">

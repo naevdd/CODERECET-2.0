@@ -36,7 +36,7 @@ function LandingPage() {
             <div className="lg:w-48 lg:ml-10 ml-2 absolute cursor-pointer">
               <img
                 src={logo}
-                className="w-12 h-12 ml-2 -mt-4 sm:w-20 sm:h-20 lg:w-[100px] lg:h-[100px]"
+                className="w-12 h-12 ml-2 -mt-4 sm:w-20 sm:h-20 lg:w-[60px] lg:h-[60px] lg:-ml-4 lg:-mt-2"
               />
             </div>
             <div className="w-full">
