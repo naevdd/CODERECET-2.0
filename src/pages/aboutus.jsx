@@ -4,6 +4,7 @@ import arrow from "../assets/btnarrow.svg";
 import star from "../assets/star.svg";
 import image from "../assets/trimg.png";
 import gif from "../assets/Code recet.gif";
+import FigmaRegisterButton from "../components/FigmaRegisterButton";
 
 function AboutUs() {
   useEffect(() => {
@@ -74,12 +75,7 @@ function AboutUs() {
               </div>
 
               <div className="w-full mt-5 flex items-center justify-center">
-                <div
-                  className="apply-button"
-                  data-hackathon-slug="code-recet-2"
-                  data-button-theme="dark-inverted"
-                  style={{ height: "44px", width: "100%" }}
-                ></div>
+                <FigmaRegisterButton />
               </div>
             </div>
           </div>
@@ -178,12 +174,7 @@ function AboutUs() {
             </div>
 
             <div className="w-full mt-5 flex items-center justify-center">
-              <div
-                className="apply-button"
-                data-hackathon-slug="code-recet-2"
-                data-button-theme="dark-inverted"
-                style={{ height: "44px", width: "100%" }}
-              ></div>
+              <FigmaRegisterButton />
             </div>
           </div>
         </div>
