@@ -78,7 +78,7 @@ function AboutUs() {
                   className="apply-button"
                   data-hackathon-slug="code-recet-2"
                   data-button-theme="dark"
-                  style={{ height: "44px", width: "100%", maxWidth: "280px" }}
+                  style={{ height: "44px", width: "300px"}}
                 ></div>
               </div>
             </div>
