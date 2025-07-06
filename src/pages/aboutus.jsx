@@ -73,12 +73,12 @@ function AboutUs() {
                 </h2>
               </div>
 
-              <div className="w-full mt-5 flex items-center justify-center px-2">
+              <div className="w-full mt-5 flex items-center justify-center">
                 <div
                   className="apply-button"
                   data-hackathon-slug="code-recet-2"
-                  data-button-theme="dark"
-                  style={{ height: "44px", width: "300px"}}
+                  data-button-theme="dark-inverted"
+                  style={{ height: "44px", width: "100%" }}
                 ></div>
               </div>
             </div>
@@ -177,12 +177,12 @@ function AboutUs() {
               </h2>
             </div>
 
-            <div className="w-full mt-5 flex items-center justify-center px-2">
+            <div className="w-full mt-5 flex items-center justify-center">
               <div
                 className="apply-button"
                 data-hackathon-slug="code-recet-2"
-                data-button-theme="dark"
-                style={{ height: "44px", width: "100%", maxWidth: "350px" }}
+                data-button-theme="dark-inverted"
+                style={{ height: "44px", width: "100%" }}
               ></div>
             </div>
           </div>
