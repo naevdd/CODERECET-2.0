@@ -5,8 +5,8 @@ import cetaa from "../assets/CETA UAE LOGO.png"
 
 function Sponsors() {
   return (
-    <div id="sponsors" className="sponsors-root min-h-screen bg-custom-black">
-      <div className="relative border-custom-gray border-t border-b text-custom-white py-12 px-6 md:px-20 flex flex-col items-center">
+    <div id="sponsors">
+      <div className="relative bg-custom-black border-custom-gray border-t border-b text-custom-white py-12 px-6 md:px-20 flex flex-col items-center">
         {/* Our Sponsors Section */}
         <h2 className="text-center text-5xl md:text-7xl font-seasons_r mb-6">
           OUR <span className="text-custom-yellow">SPONSORS</span>.
