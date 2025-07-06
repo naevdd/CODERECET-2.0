@@ -26,10 +26,10 @@ function Footer() {
           <img src={logo} className="w-20 h-20 max-w-full" />
         </div>
         {/* divider */}
-        <div className="h-[1px] bg-custom-black md:mx-20 mx-8 w-full"></div>
-        <div className="flex md:flex-row flex-col md:gap-24 gap-8 md:justify-center md:mx-auto md:h-[200px] pt-8 md:pt-0">
+        <div className="h-[1px] bg-custom-black mx-0 w-full"></div>
+        <div className="flex md:flex-row flex-col md:gap-24 gap-8 md:justify-between md:mx-20 md:h-[200px] pt-8 md:pt-0">
           {/* Links */}
-          <div className="flex flex-col md:w-[600px] gap-2 md:pl-20 pl-4 md:pt-10 pt-0 md:h-[230px] h-[200px]">
+          <div className="flex flex-col md:w-[600px] gap-2 md:pl-0 pl-4 md:pt-10 pt-0 md:h-[230px] h-[200px]">
             <div className=" flex flex-row md:pl-0 pl-4">
               <span className="text-2xl font-poppins">&gt;</span>
               <a href="#landing" className="block">
@@ -81,22 +81,22 @@ function Footer() {
               )}
             </div>
           </div>
-          <div className="flex justify-center mx-auto items-center md:items-end md:flex-col flex-row md:ml-auto md:gap-6 md:h-[260px] h-[40px] w-full md:w-auto gap-x-8 mt-8 md:mt-0">
-            <div className="hidden md:block text-2xl text-custom-black md:pr-10 font-poppins ">
+          <div className="flex justify-center mx-auto items-center md:items-end md:flex-col flex-row md:gap-6 md:h-[260px] h-[40px] w-full md:w-auto gap-x-8 mt-8 md:mt-4 lg:-mr-0">
+            <div className="hidden md:block text-2xl text-custom-black font-poppins text-right">
               Hackathon organized by:
             </div>
-            <div className="md:pr-8 flex justify-center ">
+            <div className="flex justify-center ">
               <img
                 src={tinkerhub}
                 className="w-40 md:w-48 h-auto max-w-full mr-8"
               />
             </div>
-            <div className="md:pr-8 flex justify-center pr-3">
+            <div className="flex justify-center pr-3">
               <img src={iet} className="w-40 md:w-48 h-auto max-w-full" />
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center flex-row md:justify-start md:gap-12 md:pl-20 md:pt-12 gap-4 pt-10 w-full pb-4 md:pb-0 min-h-[120px]">
+        <div className="flex justify-center items-center flex-row mb-12 lg:-mt-8 md:justify-start md:gap-12 md:pl-20 md:pt-12 gap-4 pt-10 w-full pb-2 min-h-[120px]">
           <a
             href="https://www.instagram.com/coderecet/"
             target="_blank"

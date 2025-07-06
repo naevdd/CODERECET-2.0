@@ -24,7 +24,7 @@ function AboutUs() {
     <div
       id="about"
       className="min-h-screen bg-custom-black border-custom-gray border-b flex lg:flex-row flex-col
-       justify-center lg:justify-between items-center mx-auto w-full px-4 lg:px-32 lg:py-16 py-12 overflow-visible"
+       justify-center lg:justify-between items-center mx-auto w-full px-4 lg:px-32 lg:py-16 py-12 overflow-hidden"
     >
       {/* Left Text Section */}
       <div className="w-full lg:w-auto px-2 lg:px-0">
@@ -65,7 +65,7 @@ function AboutUs() {
             <div className="absolute z-20 w-full h-full rounded-2xl border border-[#FFD700] shadow-lg bg-[linear-gradient(to_bottom,#565D60_1%,#0A0A0A_100%)] flex flex-col items-center justify-between p-5">
               <img src={image} className="w-full rounded-md" />
 
-              <div className="font-seasons_r text-center mt-5 text-[18px]">
+              <div className="font-seasons_r text-center mt-5 text-[18px] lg:text-[31px]">
                 <h2 className="text-custom-white">
                   REFRESH <span className="text-custom-yellow">IDEAS</span>
                 </h2>
@@ -164,7 +164,7 @@ function AboutUs() {
           <div className="absolute z-20 w-full h-full rounded-2xl border border-[#FFD700] shadow-lg bg-[linear-gradient(to_bottom,#565D60_1%,#0A0A0A_100%)] flex flex-col items-center justify-between p-5">
             <img src={image} className="w-full rounded-md" />
 
-            <div className="font-seasons_r text-center mt-5 text-[18px]">
+            <div className="font-seasons_r text-center mt-5 text-[18px] lg:text-[31px]">
               <h2 className="text-custom-white">
                 REFRESH <span className="text-custom-yellow">IDEAS</span>
               </h2>

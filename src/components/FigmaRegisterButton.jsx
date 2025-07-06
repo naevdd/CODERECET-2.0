@@ -6,17 +6,14 @@ export default function FigmaRegisterButton({ className = "" }) {
   return (
     <button
       onClick={handleClick}
-      className={`bg-[#c88d28] overflow-clip relative rounded-[10.8759px] w-full h-[44px] cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#b07d20] ${className}`}
+      className={`bg-[#c88d28] overflow-clip relative rounded-[10.8759px] w-full h-[60px] cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#b07d20] flex items-center justify-center ${className}`}
     >
-      <div className="absolute font-seasons_r leading-[0] left-1/2 not-italic text-[20px] text-center text-[#0A0A0A] text-nowrap top-1/2 translate-x-[-50%] translate-y-[-50%]">
-        <p className="block leading-[normal] whitespace-pre">Register Now</p>
-      </div>
-      <div
-        className="absolute w-[20px] h-[16px] right-[8%] translate-y-[-50%]"
-        style={{ top: "calc(50% + 0.652722px)" }}
-      >
+      <div className="flex items-center justify-center gap-2">
+        <span className="font-seasons_r text-[20px] text-[#0A0A0A] leading-none">
+          Register Now
+        </span>
         <svg
-          className="block size-full"
+          className="w-[16px] h-[12px]"
           fill="none"
           preserveAspectRatio="none"
           viewBox="0 0 28 23"
@@ -26,7 +23,7 @@ export default function FigmaRegisterButton({ className = "" }) {
             stroke="#0A0A0A"
             strokeLinecap="round"
             strokeLinejoin="round"
-            strokeWidth="2.17531"
+            strokeWidth="2"
           />
         </svg>
       </div>
