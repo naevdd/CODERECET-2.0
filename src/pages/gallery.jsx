@@ -59,7 +59,7 @@ const Gallery = () => {
           </div>
         </div>
       </div>
-      <div className="flex md:hidden bg-custom-black border-custom-gray pt-20 pb-16 border-b flex-col items-center">
+      <div className="flex md:hidden bg-custom-black border-custom-gray pt-20 pb-20 border-b flex-col items-center">
         <h1 className="text-custom-white font-seasons_r text-5xl md:text-7xl">
           GALLERY<span className="text-custom-yellow">.</span>
         </h1>
