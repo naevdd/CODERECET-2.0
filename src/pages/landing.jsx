@@ -36,7 +36,7 @@ function LandingPage() {
             <div className="cursor-pointer">
               <img
                 src={logo}
-                className="w-12 h-12 sm:w-20 sm:h-20 lg:w-[60px] lg:h-[60px]"
+                className="w-12 h-12 ml-4 lg:ml-0 sm:w-20 sm:h-20 lg:w-[60px] lg:h-[60px]"
               />
             </div>
             <div className="flex-1 flex justify-center ml-20 lg:ml-24">
