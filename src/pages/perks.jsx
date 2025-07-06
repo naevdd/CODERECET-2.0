@@ -89,7 +89,7 @@ const PerkCard = ({ title, description, image }) => {
         backfaceVisibility: "hidden",
       }}
     >
-      <h3 className="text-custom-white font-seasons_r text-[36px] lg:text-[40px] mb-4 h-[40px] flex items-center mt-2 sm:mt-6">
+      <h3 className="text-custom-white font-seasons_r text-[31px] mb-4 h-[40px] flex items-center mt-2 sm:mt-6">
         {title}
       </h3>
 

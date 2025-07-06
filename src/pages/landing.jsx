@@ -4,6 +4,7 @@ import gif from "../assets/cube_float1 1.gif";
 import logo from "../assets/logo.png";
 import menu from "../assets/menu_white.svg";
 import close from "../assets/close_white.svg";
+import RegisterButton from "../components/RegisterButton";
 
 function LandingPage() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,17 +17,6 @@ function LandingPage() {
     "CODE RECET",
     "CODE RECET",
   ];
-
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://apply.devfolio.co/v2/sdk.js";
-    script.async = true;
-    script.defer = true;
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
 
   return (
     <div id="landing">
@@ -44,10 +34,13 @@ function LandingPage() {
         <div className="flex justify-center">
           <nav className="flex mt-16 w-full z-50">
             <div className="lg:w-48 lg:ml-10 ml-2 absolute cursor-pointer">
-              <img src={logo} className="w-12 h-12 ml-2 -mt-4 sm:w-20 sm:h-20 lg:w-[100px] lg:h-[100px]" />
+              <img
+                src={logo}
+                className="w-12 h-12 ml-2 -mt-4 sm:w-20 sm:h-20 lg:w-[100px] lg:h-[100px]"
+              />
             </div>
             <div className="w-full">
-              <ul className="sm:flex hidden w-full lg:text-xl font-satoshi_v space-x-2 lg:space-x-20 text-white justify-center items-center">
+              <ul className="sm:flex hidden w-full lg:text-xl font-satoshi_v space-x-2 lg:space-x-20 text-custom-white justify-center items-center">
                 <li>
                   <Link
                     to="about"
@@ -92,7 +85,7 @@ function LandingPage() {
             </div>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-block sm:hidden text-white z-50 focus:outline-none"
+              className="inline-block sm:hidden text-custom-white z-50 focus:outline-none"
             >
               <div className="w-10 h-10 bg-custom-black rounded-sm flex items-center justify-center mr-[24px] -mt-5">
                 <img src={isOpen ? close : menu} className="w-6 h-6" />
@@ -103,7 +96,7 @@ function LandingPage() {
                 isOpen ? "translate-x-0" : "-translate-x-full"
               }`}
             >
-              <ul className="space-y-6 flex flex-col p-8 text-white font-satoshi_v text-xl">
+              <ul className="space-y-6 flex flex-col p-8 text-custom-white font-satoshi_v text-xl">
                 <li className="text-left">
                   <Link
                     to="about"
@@ -148,33 +141,20 @@ function LandingPage() {
                     Contact
                   </Link>
                 </li>
-                <button className="rounded-full self-start ml-2 mt-4">
-                  <p className="text-custom-yellow font-seasons_r font-extrabold text-lg">
-                    REGISTER
-                  </p>
-                </button>
               </ul>
             </div>
           </nav>
         </div>
         <div className="flex flex-col items-center">
           <h1
-            className="text-white z-10 lg:mt-32 mt-20 font-seasons_r text-5xl lg:text-8xl text-center
+            className="text-custom-white z-10 lg:mt-32 mt-20 font-seasons_r text-5xl lg:text-8xl text-center
                   "
           >
             CET<span className="font-satoshi_v">'</span>S BIGGEST <br></br>{" "}
             <span className="text-custom-yellow">HACKATHON</span> IS BACK.
           </h1>
           <div className="hidden sm:block z-30 mt-5 lg:mt-10">
-            <div
-              className="apply-button"
-              data-hackathon-slug="code-recet-2"
-              data-button-theme="dark"
-              style={{
-                height: "44px",
-                width: "312px",
-              }}
-            ></div>
+            <RegisterButton />
           </div>
           <img
             className="lg:-mt-32 -mt-14 z-20"
@@ -183,16 +163,7 @@ function LandingPage() {
             height={748}
           />
           <div className="sm:hidden mt-4 z-30">
-            <div
-              className="apply-button"
-              data-hackathon-slug="code-recet-2"
-              data-button-theme="dark"
-              style={{
-                height: "44px",
-                width: "312px",
-                margin: "0 auto",
-              }}
-            ></div>
+            <RegisterButton />
           </div>
           {/* <div className="mt-6 mb-10 flex justify-center items-center w-full px-4 overflow-x-hidden">
             <div

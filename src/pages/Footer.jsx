@@ -26,7 +26,7 @@ function Footer() {
           <img src={logo} className="w-20 h-20 max-w-full" />
         </div>
         {/* divider */}
-        <div className="h-[1px] bg-black md:mx-20 mx-8 w-full"></div>
+        <div className="h-[1px] bg-custom-black md:mx-20 mx-8 w-full"></div>
         <div className="flex md:flex-row flex-col md:gap-24 gap-8 md:justify-center md:mx-auto md:h-[200px] pt-8 md:pt-0">
           {/* Links */}
           <div className="flex flex-col md:w-[600px] gap-2 md:pl-20 pl-4 md:pt-10 pt-0 md:h-[230px] h-[200px]">
@@ -103,7 +103,7 @@ function Footer() {
             rel="noopener noreferrer"
             className="transition hover:brightness-200"
           >
-            <img src={instagram} alt="Instagram" className="w-14 h-14 mt-6 " />
+            <img src={instagram} alt="Instagram" className="w-12 h-12 mt-6 " />
           </a>
         </div>
       </div>

@@ -9,13 +9,13 @@ const Card = ({ defaultText, flippedText, extraClasses = "" }) => {
   const handleClick = () => {
     if (animating) return;
     if (!isDesktop) {
-      setFlipped(prev => !prev);
+      setFlipped((prev) => !prev);
       return;
     }
-    
+
     setAnimating(true);
     setTimeout(() => {
-      setFlipped(prev => !prev);
+      setFlipped((prev) => !prev);
     }, 250);
     setTimeout(() => {
       setAnimating(false);
@@ -27,13 +27,19 @@ const Card = ({ defaultText, flippedText, extraClasses = "" }) => {
       onClick={handleClick}
       className={`
         cursor-pointer transform transition-all ease-in-out duration-700
-        ${flipped ? "bg-white md:-translate-y-52 text-sm md:text-3xl" : "bg-custom-yellow text-2xl md:text-5xl"}
-        ${animating? "md:animate-rotateRight" : ""}
-        flex border-black border-[1.5px] md:-skew-y-12 my-10 shadow-2xl 
+        ${
+          flipped
+            ? "bg-custom-white md:-translate-y-52 text-sm md:text-3xl"
+            : "bg-custom-yellow text-2xl md:text-5xl"
+        }
+        ${animating ? "md:animate-rotateRight" : ""}
+        flex border-custom-black border-[1.5px] md:-skew-y-12 my-10 shadow-2xl 
         items-center rounded-lg w-[300px] h-[150px] md:w-[545px] md:h-[273px] ${extraClasses}
-        ${isDesktop 
-          ? "md:hover:-translate-y-52"
-          : "hover:!scale-110 hover:!blur-0 md:!scale-100 md:!blur-0 md:hover:!scale-100 group-hover:scale-90 group-hover:blur-[5px]" }
+        ${
+          isDesktop
+            ? "md:hover:-translate-y-52"
+            : "hover:!scale-110 hover:!blur-0 md:!scale-100 md:!blur-0 md:hover:!scale-100 group-hover:scale-90 group-hover:blur-[5px]"
+        }
       `}
     >
       <p className="font-mono mx-auto p-10 text-center">
