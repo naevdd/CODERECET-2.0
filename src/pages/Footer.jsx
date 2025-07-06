@@ -99,7 +99,7 @@ function Footer() {
           </div>
 
           <div className="flex justify-center mx-auto items-center md:items-end md:flex-col flex-row md:gap-6 md:h-[260px] h-[40px] w-full md:w-auto gap-x-8 mt-8 md:mt-4 lg:-mr-0">
-            <div className="hidden md:block text-2xl text-custom-black font-poppins text-right">
+            <div className="hidden md:block text-2xl text-custom-black font-poppins text-right whitespace-nowrap pr-4">
               Hackathon organized by:
             </div>
             <div className="flex justify-center ">
