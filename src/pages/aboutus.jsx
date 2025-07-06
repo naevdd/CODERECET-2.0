@@ -67,8 +67,8 @@ function AboutUs() {
               desc: "Would you say no?",
             },
           ].map((item, index) => (
-            <li key={index} className="flex flex-row items-start gap-3">
-              <img src={star} className="w-6 h-6 mt-1" />
+            <li key={index} className="flex flex-row items-center gap-3">
+              <img src={star} className="w-6 h-6 " />
               <div
                 className="p-2 text-white border border-custom-yellow 
                 bg-[linear-gradient(to_bottom,#565D60_1%,#000000_100%)] rounded-md lg:w-[380px] w-[300px]"
@@ -87,11 +87,11 @@ function AboutUs() {
         <div className="absolute w-[500px] lg:w-[800px] min-h-full">
           <img
             src={imgtop}
-            className="absolute w-[400px] lg:w-[500px] -mt-36 lg:mt-0 z-1"
+            className="absolute w-[400px] lg:w-[500px] -mt-36 lg:mt-0 z-1 mix-blend-screen"
           />
           <img
             src={imgtop}
-            className="absolute w-[370px] lg:w-[600px] mt-28 lg:mt-56 ml-36 lg:ml-52 z-0"
+            className="absolute w-[370px] lg:w-[600px] mt-28 lg:mt-56 ml-36 lg:ml-52 z-0 mix-blend-screen"
           />
         </div>
 
@@ -120,8 +120,8 @@ function AboutUs() {
                 </h2>
               </div>
 
-              <button className="flex items-center p-3 rounded-lg bg-custom-yellow font-seasons_r text-2xl hover:bg-yellow-700 hover:scale-110 transition-all ease-in-out">
-                Register Now <img src={arrow} className="ml-2" />
+              <button className="w-full flex items-center justify-center p-3 rounded-lg bg-custom-yellow font-seasons_r text-2xl hover:bg-yellow-700 hover:scale-110 transition-all ease-in-out">
+                Register Now <img src={arrow} className="ml-2 w-5 h-4" />
               </button>
             </div>
           </div>

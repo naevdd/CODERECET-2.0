@@ -32,6 +32,7 @@ function LandingPage() {
     <div id="landing">
       <div className="min-h-screen bg-custom-black">
         <div className="justify-center flex">
+
           <div className="vertical-lines flex h-full gap-24 lg:gap-64 absolute">
             <div className="w-[1px] bg-custom-gray"></div>
             <div className="w-[1px] bg-custom-gray"></div>
@@ -39,6 +40,7 @@ function LandingPage() {
             <div className="w-[1px] bg-custom-gray"></div>
             <div className="sm:block hidden w-[1px] bg-custom-gray"></div>
             <div className="sm:block hidden w-[1px] bg-custom-gray"></div>
+
           </div>
         </div>
         <div className="flex justify-center">
