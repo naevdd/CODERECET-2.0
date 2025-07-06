@@ -7,10 +7,12 @@ import gift from "../assets/Gifts.png";
 
 const Prize = () => {
   return (
-    <div className="bg-custom-black border-custom-gray border-t flex flex-col gap-y-9 items-center justify-start min-h-screen pt-12">
+    <div className="bg-custom-black border-custom-gray border-t border-b flex flex-col gap-y-9 items-center justify-start min-h-screen pt-12 pb-12">
       <div className="text-custom-yellow font-seasons_r text-7xl md:text-8xl">
         PRIZES
       </div>
+      {/* Border line below PRIZES title - mobile only */}
+      <div className="w-full border-b border-custom-gray md:hidden"></div>
 
       {/* Flex container for prizes */}
       <div className="flex flex-wrap border-custom-gray md:border-t md:border-b md:flex-nowrap items-center justify-center md:h-[800px] w-full">
@@ -63,8 +65,11 @@ const Prize = () => {
         </div>
       </div>
 
+      {/* Border line above "Is that all?" section - mobile only */}
+      <div className="w-full border-t border-custom-gray md:hidden"></div>
+
       {/* Additional Content */}
-      <div className="p-10 w-full flex items-center justify-center">
+      <div className="pt-10 px-10 pb-6 md:p-10 w-full flex items-center justify-center">
         <div className="bg-custom-yellow w-[1250px] flex flex-col items-start p-5 md:px-14 md:pb-6 md:pt-10 rounded-lg md:rounded-3xl space-y-6 ">
           <div className="font-seasons_r text-4xl md:text-6xl">
             Is that all?

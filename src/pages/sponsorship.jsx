@@ -6,9 +6,9 @@ import ethindia from "../assets/ethindia-light.svg";
 function Sponsors() {
   return (
     <div id="sponsors" className="bg-custom-black">
-      <div className="relative border-custom-gray border-t border-b text-custom-white py-12 px-6 md:px-20 flex flex-col items-center">
+      <div className="relative border-custom-gray border-t border-b text-custom-white py-16 md:py-20 px-6 md:px-20 flex flex-col items-center">
         {/* Our Sponsors Section */}
-        <h2 className="text-center text-5xl md:text-7xl font-seasons_r mb-6">
+        <h2 className="text-center text-5xl md:text-7xl font-seasons_r mb-10">
           OUR <span className="text-custom-yellow">SPONSORS</span>.
         </h2>
         <div className="flex flex-col md:flex-col w-full max-w-screen-xl space-y-4">

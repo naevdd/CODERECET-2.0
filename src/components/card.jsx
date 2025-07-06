@@ -42,7 +42,7 @@ const Card = ({ defaultText, flippedText, extraClasses = "" }) => {
         }
       `}
     >
-      <p className="font-mono mx-auto p-10 text-center">
+      <p className="font-satoshi_v font-extrabold md:font-bold mx-auto p-10 text-center">
         {flipped ? flippedText : defaultText}
       </p>
     </div>

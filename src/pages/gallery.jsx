@@ -26,8 +26,8 @@ const Gallery = () => {
 
   return (
     <div id="gallery">
-      <div className="hidden bg-custom-black border-custom-gray p-20 border-b md:flex flex-col items-center h-screen md:h-[150vh] md:pt-16 pt-6">
-        <h1 className="text-custom-white font-seasons_r text-[48px] md:text-8xl">
+      <div className="hidden bg-custom-black border-custom-gray p-28 border-b md:flex flex-col items-center h-screen md:h-[150vh] md:pt-24 pt-6">
+        <h1 className="text-custom-white font-seasons_r text-5xl md:text-7xl">
           GALLERY<span className="text-custom-yellow">.</span>
         </h1>
         <div className="w-[80vw] rounded-2xl overflow-hidden group mt-10">
@@ -59,8 +59,8 @@ const Gallery = () => {
           </div>
         </div>
       </div>
-      <div className="flex md:hidden bg-custom-black border-custom-gray pt-8 pb-10 border-b flex-col items-center">
-        <h1 className="text-custom-white font-seasons_r text-[48px] md:text-8xl">
+      <div className="flex md:hidden bg-custom-black border-custom-gray pt-20 pb-16 border-b flex-col items-center">
+        <h1 className="text-custom-white font-seasons_r text-5xl md:text-7xl">
           GALLERY<span className="text-custom-yellow">.</span>
         </h1>
         <div className="card-3d mt-10">
