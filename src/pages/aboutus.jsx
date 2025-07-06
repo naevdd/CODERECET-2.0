@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import imgtop from "../assets/abtimgtop.png";
 import arrow from "../assets/btnarrow.svg";
 import star from "../assets/star.svg";
@@ -6,6 +6,19 @@ import image from "../assets/trimg.png";
 import gif from "../assets/Code recet.gif";
 
 function AboutUs() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      if (document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
+    };
+  }, []);
+
   return (
     <div
       id="about"
@@ -60,9 +73,14 @@ function AboutUs() {
                 </h2>
               </div>
 
-              <button className="w-full mt-5 flex items-center justify-center p-3 rounded-lg bg-custom-yellow text-[#0A0A0A] font-seasons_r text-lg sm:text-xl hover:bg-yellow-700 hover:scale-105 transition-all ease-in-out">
-                Register Now <img src={arrow} className="ml-2 w-5 h-4" />
-              </button>
+              <div className="w-full mt-5 flex items-center justify-center">
+                <div
+                  className="apply-button"
+                  data-hackathon-slug="code-recet-2"
+                  data-button-theme="dark-inverted"
+                  style={{ height: "44px", width: "100%" }}
+                ></div>
+              </div>
             </div>
           </div>
         </div>
@@ -159,9 +177,14 @@ function AboutUs() {
               </h2>
             </div>
 
-            <button className="w-full mt-5 flex items-center justify-center p-3 rounded-lg bg-custom-yellow text-[#0A0A0A] font-seasons_r text-xl hover:bg-yellow-700 hover:scale-105 transition-all ease-in-out">
-              Register Now <img src={arrow} className="ml-2 w-5 h-4" />
-            </button>
+            <div className="w-full mt-5 flex items-center justify-center">
+              <div
+                className="apply-button"
+                data-hackathon-slug="code-recet-2"
+                data-button-theme="dark-inverted"
+                style={{ height: "44px", width: "100%" }}
+              ></div>
+            </div>
           </div>
         </div>
       </div>
