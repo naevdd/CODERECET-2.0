@@ -23,7 +23,7 @@ function AboutUs() {
     <div
       id="about"
       className="min-h-screen bg-custom-black border-custom-gray border-b flex lg:flex-row flex-col
-       justify-center lg:justify-between items-center mx-auto w-full px-4 lg:px-32 py-12 lg:py-16 overflow-visible"
+       justify-center lg:justify-between items-center mx-auto w-full px-4 lg:px-32 lg:py-16 py-12 overflow-visible"
     >
       {/* Left Text Section */}
       <div className="w-full lg:w-auto px-2 lg:px-0">
@@ -132,7 +132,7 @@ function AboutUs() {
               <img src={star} className="w-6 h-6 " />
               <div
                 className="p-2 text-custom-white border border-custom-yellow 
-                bg-[linear-gradient(to_bottom,#565D60_1%,#0A0A0A_100%)] rounded-md w-full lg:max-w-[380px]"
+                bg-[linear-gradient(to_bottom,#565D60_1%,#0A0A0A_100%)] rounded-md w-full lg:max-w-[450px]"
               >
                 <h2 className="font-seasons_r text-[20px]">{item.title}</h2>
                 <h2 className="font-satoshi_v text-[16px]">{item.desc}</h2>
