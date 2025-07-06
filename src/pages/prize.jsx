@@ -7,7 +7,7 @@ import gift from "../assets/Gifts.png";
 
 const Prize = () => {
   return (
-    <div className="bg-custom-black border-custom-gray flex flex-col gap-y-9 items-center justify-start min-h-screen">
+    <div className="bg-custom-black border-custom-gray border-t flex flex-col gap-y-9 items-center justify-start min-h-screen pt-12">
       <div className="text-custom-yellow font-seasons_r text-7xl md:text-8xl">
         PRIZES
       </div>

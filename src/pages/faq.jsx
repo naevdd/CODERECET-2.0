@@ -2,8 +2,11 @@ import Card from "../components/card";
 
 const Gallery = () => {
   return (
-    <div id="gallery" className="bg-custom-black p-8 flex flex-col items-center min-h-screen md:pt-20 pt-10">
-      <h1 className="text-custom-white font-seasons_r text-left text-4xl md:text-6xl">
+    <div
+      id="gallery"
+      className="bg-custom-black p-8 flex flex-col items-center min-h-screen md:pt-20 pt-10"
+    >
+      <h1 className="text-custom-white font-seasons_r text-center text-[48px]">
         FREQUENTLY <span className="text-custom-yellow">ASKED QUESTIONS</span>.
       </h1>
       <div className="md:flex md:flex-row flex-col my-auto items-center gap-1 group">
