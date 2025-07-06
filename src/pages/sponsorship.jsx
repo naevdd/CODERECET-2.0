@@ -1,26 +1,24 @@
 import React from "react";
 import devfolio from "../assets/Devfolio_Logo-White.svg";
 import ethindia from "../assets/ethindia-light.svg";
+import cetaa from "../assets/CETA UAE LOGO.png"
 
 function Sponsors() {
   return (
     <div id="sponsors">
       <div className="relative bg-custom-black border-custom-gray border-t border-b text-custom-white py-12 px-6 md:px-20 flex flex-col items-center">
-        {/* Vertical lines background */}
-        <div className="flex h-full gap-24 lg:gap-64 absolute">
-          <div className="w-[1px] bg-custom-gray opacity-10"></div>
-          <div className="w-[1px] bg-custom-gray opacity-10"></div>
-          <div className="w-[1px] bg-custom-gray opacity-10"></div>
-          <div className="w-[1px] bg-custom-gray opacity-10"></div>
-          <div className="sm:block hidden w-[1px] bg-custom-gray opacity-30"></div>
-          <div className="sm:block hidden w-[1px] bg-custom-gray opacity-30"></div>
-        </div>
-
         {/* Our Sponsors Section */}
         <h2 className="text-center text-5xl md:text-7xl font-seasons_r mb-6">
           OUR <span className="text-custom-yellow">SPONSORS</span>.
         </h2>
         <div className="flex flex-col md:flex-col w-full max-w-screen-xl space-y-4">
+          {/* <div className="border border-custom-yellow rounded-[15px] p-8 h-24 md:h-32 w-full flex items-center justify-center">
+            <img
+                src={cetaa}
+                alt="CETAA UAE LOGO"
+                className="max-h-20 md:max-h-24 object-contain"
+              />
+          </div> */}
           <div className="border border-custom-yellow rounded-[15px] p-8 h-20 md:h-28 w-full flex items-center justify-center">
             <a
               href="https://devfolio.co"
@@ -34,7 +32,7 @@ function Sponsors() {
               />
             </a>
           </div>
-          <div className="border border-custom-yellow rounded-[15px] p-6 h-16 md:h-22 w-full"></div>
+          
           <div className="border border-custom-yellow rounded-[15px] p-6 h-14 md:h-18 w-full"></div>
         </div>
 
