@@ -79,7 +79,7 @@ const countdown = () => {
           </h1>
         </div>
         <div className="bg-custom-yellow flex justify-center items-center rounded-xl mx-4 lg:mx-8 w-auto text-[#0A0A0A] h-30 sm:h-48 md:h-56 lg:h-72 mb-6 -mt-12 lg:-mt-0">
-          <div className="flex flex-row lg:space-x-9 space-x-6 -pt-8 lg:mb-4 mb-4 text-[72px] lg:text-[230px] font-bebas_neue">
+          <div className="flex flex-row lg:space-x-12 space-x-6 -pt-8 lg:mb-4 mb-4 text-[72px] lg:text-[230px] font-bebas_neue">
             <div className="text-center">
               <span>{timeLeft.days}</span>
               <div className="lg:text-2xl text-xs -mt-4 lg:-mt-20 font-satoshi_v">
