@@ -32,15 +32,15 @@ function LandingPage() {
           </div>
         </div>
         <div className="flex justify-center">
-          <nav className="flex mt-16 w-full z-50">
-            <div className="lg:w-48 lg:ml-10 ml-2 absolute cursor-pointer">
+          <nav className="flex justify-between items-center mt-16 w-full z-50 px-4 lg:px-6">
+            <div className="cursor-pointer">
               <img
                 src={logo}
-                className="w-12 h-12 ml-2 -mt-4 sm:w-20 sm:h-20 lg:w-[60px] lg:h-[60px] lg:-ml-4 lg:-mt-2"
+                className="w-12 h-12 sm:w-20 sm:h-20 lg:w-[60px] lg:h-[60px]"
               />
             </div>
-            <div className="w-full">
-              <ul className="sm:flex hidden w-full lg:text-xl font-satoshi_v space-x-2 lg:space-x-20 text-custom-white justify-center items-center">
+            <div className="flex-1 flex justify-center ml-20 lg:ml-24">
+              <ul className="sm:flex hidden lg:text-xl font-satoshi_v space-x-2 lg:space-x-20 text-custom-white items-center">
                 <li>
                   <Link
                     to="about"
@@ -82,6 +82,14 @@ function LandingPage() {
                   </Link>
                 </li>
               </ul>
+            </div>
+            {/* Desktop Register Button */}
+            <div className="hidden sm:block">
+              <div className="bg-custom-yellow rounded-[30px] h-[50px] w-[140px] flex items-center justify-center cursor-pointer hover:bg-yellow-600 transition-colors">
+                <span className="font-satoshi_v text-[#0A0A0A] text-[18px] font-medium">
+                  REGISTER
+                </span>
+              </div>
             </div>
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -141,6 +149,17 @@ function LandingPage() {
                     Contact
                   </Link>
                 </li>
+                {/* Mobile Register Button */}
+                <li className="text-left mt-8 pt-4">
+                  <div
+                    className="bg-custom-yellow rounded-[30px] h-[50px] w-full flex items-center justify-center cursor-pointer hover:bg-yellow-600 transition-colors"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    <span className="font-satoshi_v text-[#0A0A0A] text-[18px] font-medium">
+                      REGISTER
+                    </span>
+                  </div>
+                </li>
               </ul>
             </div>
           </nav>
@@ -179,7 +198,7 @@ function LandingPage() {
           </div> */}
           <div className="lg:h-20 absolute bottom-0 -mt-16 lg:-mt-[18rem] w-full z-10 bg-custom-black inline-flex flex-nowrap border-2 border-l-0 border-r-0 border-custom-gray">
             <div className="overflow-hidden relative">
-              <div className="flex animate-infinite-scroll space-x-16 sm:space-x-36 p-2">
+              <div className="flex animate-infinite-scroll space-x-16 sm:space-x-36 p-2 pt-3">
                 {words.concat(words).map((word, index) => (
                   <li
                     key={index}

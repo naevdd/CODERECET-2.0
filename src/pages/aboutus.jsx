@@ -77,7 +77,7 @@ function AboutUs() {
                 <div
                   className="apply-button"
                   data-hackathon-slug="code-recet-2"
-                  data-button-theme="dark"
+                  data-button-theme="dark-inverted"
                   style={{ height: "44px", width: "100%" }}
                 ></div>
               </div>
