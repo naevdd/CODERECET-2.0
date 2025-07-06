@@ -15,11 +15,11 @@ const Prize = () => {
       {/* Flex container for prizes */}
       <div className="flex flex-wrap border-custom-gray md:border-t md:border-b md:flex-nowrap items-center justify-center md:h-[800px] w-full">
         {/* SECOND PRIZE - Always first in nowrap, moves to second in wrap */}
-        <div className="h-full order-2 md:order-1 pb-14 px-5 flex flex-col items-center justify-center space-y-7">
+        <div className="h-full order-2 md:order-1 pb-6 px-5 flex flex-col items-center justify-center space-y-3 md:space-y-7">
           <img
             src={second}
             alt="second"
-            className="mt-32 hover:-translate-y-3  
+            className="mt-10 hover:-translate-y-3  
                             hover:drop-shadow-[0_0_90px_rgba(122,114,111,1)] hover:brightness-100 
                             transition-all duration-700 ease-in-out"
           />
@@ -32,11 +32,11 @@ const Prize = () => {
         </div>
 
         {/* FIRST PRIZE - Moves to first position in wrap, middle in nowrap */}
-        <div className="h-full order-1 md:order-2 border-custom-gray md:border-l md:border-r pb-14 px-5 flex flex-col items-center justify-center space-y-7">
+        <div className="h-full order-1 md:order-2 border-custom-gray md:border-l md:border-r pb-6 px-5 flex flex-col items-center justify-center space-y-3 md:space-y-7">
           <img
             src={first}
             alt="first"
-            className="md:-mt-32 hover:-translate-y-3 transition-all duration-700 hover:filter hover:drop-shadow-[0px_0px_30px_rgba(215,159,24,1)] filter drop-shadow-[0px_0px_5px_rgba(215,159,24,0.5)]"
+            className="md:-mt-10 hover:-translate-y-3 transition-all duration-700 hover:filter hover:drop-shadow-[0px_0px_30px_rgba(215,159,24,1)] filter drop-shadow-[0px_0px_5px_rgba(215,159,24,0.5)]"
           />
           <div className="font-seasons_r text-custom-white text-3xl md:text-5xl">
             FIRST
@@ -47,10 +47,10 @@ const Prize = () => {
         </div>
 
         {/* THIRD PRIZE - Always last */}
-        <div className="h-full order-3 md:order-3 border-custom-gray pb-14 flex flex-col items-center justify-center space-y-7">
+        <div className="h-full order-3 md:order-3 border-custom-gray pb-6 flex flex-col items-center justify-center space-y-3 md:space-y-7">
           <img
             src={third}
-            className="mt-32 drop-shadow-[0_0_30px_rgba(118,53,37,1)] 
+            className="mt-10 drop-shadow-[0_0_30px_rgba(118,53,37,1)] 
                             hover:drop-shadow-[0_0_150px_rgba(255,0,0,0.8)] 
                             transition-all duration-700 ease-in-out"
           />
