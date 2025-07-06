@@ -21,9 +21,20 @@ function Footer() {
       className="bg-custom-black md:p-10 justify-center items-center flex overflow-x-hidden "
     >
       <div className="bg-custom-yellow w-full max-w-[1300px] h-auto md:h-[560px] md:rounded-2xl rounded-2xl rounded-b-none mx-auto">
-        {/* logo*/}
-        <div className="flex md:justify-start justify-center items-center md:pt-10 pt-2 md:pl-20 pl-4 md:h-[150px] h-[120px] w-full">
+        {/* logo and registration button */}
+        <div className="flex md:justify-between justify-center items-center md:pt-10 pt-2 md:pl-20 pl-4 md:pr-20 pr-4 md:h-[150px] h-[120px] w-full">
           <img src={logo} className="w-20 h-20 max-w-full" />
+          <div className="hidden md:flex justify-center items-center">
+            <div
+              className="apply-button"
+              data-hackathon-slug="code-recet-2"
+              data-button-theme="dark-inverted"
+              style={{
+                height: "44px",
+                width: "192px",
+              }}
+            ></div>
+          </div>
         </div>
         {/* divider */}
         <div className="h-[1px] bg-custom-black mx-0 w-full"></div>
@@ -82,20 +93,17 @@ function Footer() {
             </div>
           </div>
 
-          {/* Registration Button */}
-          <div className="flex justify-center items-center md:items-start md:pt-10">
-            <div className="mt-6 mb-10 flex justify-center items-center w-full px-4 overflow-x-hidden">
-              <div
-                className="apply-button"
-                data-hackathon-slug="code-recet-2"
-                data-button-theme="dark-inverted"
-                style={{
-                  height: "44px",
-                  width: "100%",
-                  maxWidth: "192px",
-                }}
-              ></div>
-            </div>
+          {/* Mobile Registration Button */}
+          <div className="flex md:hidden justify-center items-center px-4 mb-6">
+            <div
+              className="apply-button"
+              data-hackathon-slug="code-recet-2"
+              data-button-theme="dark-inverted"
+              style={{
+                height: "44px",
+                width: "192px",
+              }}
+            ></div>
           </div>
 
           <div className="flex justify-center mx-auto items-center md:items-end md:flex-col flex-row md:gap-6 md:h-[260px] h-[40px] w-full md:w-auto gap-x-8 mt-8 md:mt-4 lg:-mr-0">
