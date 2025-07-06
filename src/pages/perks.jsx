@@ -97,7 +97,7 @@ const PerkCard = ({ title, description, image }) => {
         <img src={image} alt={title} className="w-full h-full object-contain" />
       </div>
 
-      <p className="text-custom-white font-satoshi_v text-[18px] sm:text-[20px] flex-grow flex items-center px-2 text-center -mt-2">
+      <p className="text-custom-white font-satoshi_v text-[18px] sm:text-[18px] flex-grow flex items-center px-2 text-center -mt-2">
         {description}
       </p>
     </div>
