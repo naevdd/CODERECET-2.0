@@ -29,7 +29,7 @@ const Prize = () => {
             SECOND
           </div>
           <div className="text-custom-yellow font-bebas_neue font-bold text-3xl md:text-5xl">
-            Rs.20000
+            Rs.25000
           </div>
         </div>
 
@@ -62,7 +62,7 @@ const Prize = () => {
             THIRD
           </div>
           <div className="text-custom-yellow font-bebas_neue font-bold text-3xl md:text-5xl">
-            Rs.15000
+            Rs.10000
           </div>
         </div>
       </div>
@@ -79,7 +79,7 @@ const Prize = () => {
           <div className="flex md:flex-row items-start justify-start ">
             <div className="text-2xl md:text-4xl font-satoshi_v text-custom-white w-full md:w-[75%]">
               Not at all! Everyone who gets selected gets Goodies! T-Shirts,
-              stickers, you name it!
+              stickers, you name it! And guess what? There's also a <b>₹10,000</b> track prize exclusively for the best AI-based solution.
             </div>
             <div className=" w-24 md:w-[30%] md:flex md:flex-row justify-end -mt-20 md:-mt-36 md:-mr-36">
               <img src={gift} alt="gift" className="w-24 md:w-96" />
