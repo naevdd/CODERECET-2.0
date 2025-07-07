@@ -7,7 +7,7 @@ import gift from "../assets/Gifts.png";
 
 const Prize = () => {
   return (
-    <div className="bg-custom-black border-custom-gray border-t border-b flex flex-col gap-y-9 items-center justify-start min-h-screen pt-12 pb-12">
+    <div className="bg-custom-black border-custom-gray border-t border-b flex flex-col gap-y-9 items-center justify-start min-h-screen pt-12 pb-12 w-full max-w-[1250px] 2xl:max-w-[1700px] mx-auto">
       <div className="text-custom-yellow font-seasons_r text-7xl md:text-8xl">
         PRIZES
       </div>
@@ -21,9 +21,9 @@ const Prize = () => {
           <img
             src={second}
             alt="second"
-            className="mt-10 hover:-translate-y-3  
-                            hover:drop-shadow-[0_0_90px_rgba(122,114,111,1)] hover:brightness-100 
-                            transition-all duration-700 ease-in-out"
+            className="mt-10 drop-shadow-[0_0_50px_rgba(122,114,111,0.8)] 
+             hover:-translate-y-3 transition-all duration-700 
+             hover:drop-shadow-[0_0_150px_rgba(122,114,111,1)]"
           />
           <div className="font-seasons_r text-custom-white text-3xl md:text-5xl">
             SECOND
@@ -38,7 +38,9 @@ const Prize = () => {
           <img
             src={first}
             alt="first"
-            className="md:-mt-10 hover:-translate-y-3 transition-all duration-700 hover:filter hover:drop-shadow-[0px_0px_30px_rgba(215,159,24,1)] filter drop-shadow-[0px_0px_5px_rgba(215,159,24,0.5)]"
+            className="md:-mt-10 drop-shadow-[0_0_40px_rgba(215,159,24,0.8)] 
+             hover:-translate-y-3 transition-all duration-700 
+             hover:drop-shadow-[0_0_150px_rgba(215,159,24,1)]"
           />
           <div className="font-seasons_r text-custom-white text-3xl md:text-5xl">
             FIRST
