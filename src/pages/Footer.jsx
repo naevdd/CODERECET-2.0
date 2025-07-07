@@ -38,7 +38,7 @@ function Footer() {
             <div
               className="apply-button"
               data-hackathon-slug="code-recet-2"
-              data-button-theme="dark-inverted"
+              data-button-theme="dark"
               style={{
                 height: "44px",
                 width: "192px",
