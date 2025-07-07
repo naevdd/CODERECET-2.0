@@ -128,7 +128,7 @@ function Footer() {
             rel="noopener noreferrer"
             className="transition hover:brightness-200"
           >
-            <img src={instagram} alt="Instagram" className="w-12 h-12 mt-6 " />
+            <img src={instagram} alt="Instagram" className="w-12 h-12 mt-12 " />
           </a>
         </div>
       </div>
