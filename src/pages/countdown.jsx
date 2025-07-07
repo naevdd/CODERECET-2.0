@@ -89,28 +89,28 @@ const Countdown = () => {
               >
                 <div className="text-center">
                   <span>{timeLeft.days}</span>
-                  <div className="text-[14px] md:text-[20px] lg:text-2xl -mt-2 sm:-mt-4 md:-mt-8 lg:-mt-12 xl:-mt-20 font-satoshi_v">
+                  <div className="text-[14px] md:text-[20px] lg:text-2xl -mt-4 sm:-mt-4 md:-mt-8 lg:-mt-12 xl:-mt-20 font-satoshi_v">
                     DAYS
                   </div>
                 </div>
                 <span>:</span>
                 <div className="text-center">
                   <span>{timeLeft.hours}</span>
-                  <div className="text-[14px] md:text-[20px] lg:text-2xl -mt-2 sm:-mt-4 md:-mt-8 lg:-mt-12 xl:-mt-20 font-satoshi_v">
+                  <div className="text-[14px] md:text-[20px] lg:text-2xl -mt-4 sm:-mt-4 md:-mt-8 lg:-mt-12 xl:-mt-20 font-satoshi_v">
                     HOURS
                   </div>
                 </div>
                 <span>:</span>
                 <div className="text-center">
                   <span>{timeLeft.minutes}</span>
-                  <div className="text-[14px] md:text-[20px] lg:text-2xl -mt-2 sm:-mt-4 md:-mt-8 lg:-mt-12 xl:-mt-20 font-satoshi_v">
+                  <div className="text-[14px] md:text-[20px] lg:text-2xl -mt-4 sm:-mt-4 md:-mt-8 lg:-mt-12 xl:-mt-20 font-satoshi_v">
                     MINUTES
                   </div>
                 </div>
                 <span>:</span>
                 <div className="text-center">
                   <span>{timeLeft.seconds}</span>
-                  <div className="text-[14px] md:text-[20px] lg:text-2xl -mt-2 sm:-mt-4 md:-mt-8 lg:-mt-12 xl:-mt-20 font-satoshi_v">
+                  <div className="text-[14px] md:text-[20px] lg:text-2xl -mt-4 sm:-mt-4 md:-mt-8 lg:-mt-12 xl:-mt-20 font-satoshi_v">
                     SECONDS
                   </div>
                 </div>

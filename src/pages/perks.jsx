@@ -34,7 +34,7 @@ const PerksSection = () => {
     <section className="relative overflow-hidden flex justify-center items-center py-10 mb-[12px] px-4 sm:px-[22px]">
       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full max-w-[1440px] border-custom-gray opacity-50"></div>
       <div
-        className="w-full max-w-[1440px] mx-auto
+        className="w-full max-w-[1440px] xl:max-w-[1800px] mx-auto
   grid
   grid-cols-1
   md:grid-cols-2
@@ -105,7 +105,7 @@ const PerkCard = ({ title, description, image }) => {
 
   return (
     <motion.div
-      className="relative w-full max-w-[350px] mx-auto h-[450px] sm:h-[450px] md:h-[500px] lg:h-[550px] xl:h-[600px] perspective-1000 cursor-pointer"
+      className="relative w-full max-w-[350px] xl:max-w-[420px] mx-auto h-[450px] sm:h-[450px] md:h-[500px] lg:h-[550px] xl:h-[600px] perspective-1000 cursor-pointer"
       onClick={handleCardClick}
       onHoverStart={() => {
         if (!isMobile && !hasFlippedThisHover) {
