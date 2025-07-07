@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import logo from "../assets/CodeRecet_LOGO.png";
 import vector from "../assets/Vector.png";
@@ -14,6 +14,16 @@ import instagram from "../assets/instagram.svg";
 
 function Footer() {
   const [showContacts, setShowContacts] = useState(false);
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <div
@@ -98,7 +108,7 @@ function Footer() {
             <div
               className="apply-button"
               data-hackathon-slug="code-recet-2"
-              data-button-theme="dark-inverted"
+              data-button-theme="dark"
               style={{
                 height: "44px",
                 width: "192px",
