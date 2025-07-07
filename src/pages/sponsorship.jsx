@@ -34,7 +34,7 @@ function Sponsors() {
             </a>
           </div>
 
-          <div className="border border-custom-yellow rounded-[15px] p-6 h-32 md:h-40 w-full flex items-center justify-center gap-16 md:gap-40">
+          <div className="border border-custom-yellow rounded-[15px] p-6 h-24 md:h-36 w-full flex items-center justify-center gap-16 md:gap-40">
             <img
               src={cetaaUAE}
               alt="CETA UAE LOGO"
