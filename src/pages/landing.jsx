@@ -180,7 +180,10 @@ function LandingPage() {
             CET<span className="font-satoshi_v">'</span>S BIGGEST <br></br>{" "}
             <span className="text-custom-yellow">HACKATHON</span> IS BACK.
           </h1>
-          <div className="hidden sm:block z-30 lg:mt-10">
+          <div className="hidden sm:block z-30 md:mt-8 lg:mt-10">
+            <RegisterButton />
+          </div>
+          <div className="sm:hidden mt-4 mb-2">
             <RegisterButton />
           </div>
           <img
@@ -189,9 +192,7 @@ function LandingPage() {
             width={748}
             height={748}
           />
-          <div className="sm:hidden -mt-4 z-30">
-            <RegisterButton />
-          </div>
+          
           {/* <div className="mt-6 mb-10 flex justify-center items-center w-full px-4 overflow-x-hidden">
             <div
               className="apply-button"
