@@ -85,11 +85,16 @@ function LandingPage() {
             </div>
             {/* Desktop Register Button */}
             <div className="hidden sm:block">
-              <div className="bg-custom-yellow rounded-[30px] h-[50px] w-[140px] flex items-center justify-center cursor-pointer hover:bg-yellow-600 transition-colors">
+              <a
+                href="https://code-recet-2.devfolio.co/application"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-custom-yellow rounded-[30px] h-[50px] w-[140px] flex items-center justify-center cursor-pointer hover:bg-yellow-600 transition-colors"
+              >
                 <span className="font-satoshi_v text-[#0A0A0A] text-[18px] font-medium">
                   REGISTER
                 </span>
-              </div>
+              </a>
             </div>
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -151,14 +156,17 @@ function LandingPage() {
                 </li>
                 {/* Mobile Register Button */}
                 <li className="text-left mt-8 pt-4">
-                  <div
+                  <a
+                    href="https://code-recet-2.devfolio.co/application"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-custom-yellow rounded-[30px] h-[50px] w-full flex items-center justify-center cursor-pointer hover:bg-yellow-600 transition-colors"
                     onClick={() => setIsOpen(false)}
                   >
                     <span className="font-satoshi_v text-[#0A0A0A] text-[18px] font-medium">
                       REGISTER
                     </span>
-                  </div>
+                  </a>
                 </li>
               </ul>
             </div>
