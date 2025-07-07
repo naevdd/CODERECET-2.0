@@ -3,6 +3,7 @@ import devfolio from "../assets/Devfolio_Logo-White.svg";
 import ethindia from "../assets/ethindia-light.svg";
 import cetaaUAE from "../assets/CETA UAE LOGO.png";
 import cetaaDC from "../assets/cetaa dc.png";
+import buildclub from "../assets/image.png";
 
 function Sponsors() {
   return (
@@ -34,16 +35,24 @@ function Sponsors() {
             </a>
           </div>
 
-          <div className="border border-custom-yellow rounded-[15px] p-6 h-24 md:h-36 w-full flex items-center justify-center gap-16 md:gap-40">
+          <div className="border border-custom-yellow rounded-[15px] p-6 h-24 md:h-40 w-full flex items-center justify-center gap-16 md:gap-40">
             <img
               src={cetaaUAE}
               alt="CETA UAE LOGO"
-              className="max-h-20 md:max-h-32 object-contain"
+              className="max-h-24 md:max-h-40 object-contain"
             />
             <img
               src={cetaaDC}
               alt="CETAA DC LOGO"
-              className="max-h-16 md:max-h-28 object-contain"
+              className="max-h-20 md:max-h-36 object-contain"
+            />
+          </div>
+
+          <div className="border border-custom-yellow rounded-[15px] p-8 h-24 md:h-32 w-full flex items-center justify-center">
+            <img
+              src={buildclub}
+              alt="Sponsor Logo"
+              className="max-h-16 md:max-h-24 object-contain rounded-lg"
             />
           </div>
         </div>
