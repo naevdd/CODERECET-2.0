@@ -1,7 +1,8 @@
 import React from "react";
 import devfolio from "../assets/Devfolio_Logo-White.svg";
 import ethindia from "../assets/ethindia-light.svg";
-//import cetaa from "../assets/CETA UAE LOGO.png"
+import cetaaUAE from "../assets/CETA UAE LOGO.png";
+import cetaaDC from "../assets/cetaa dc.png";
 
 function Sponsors() {
   return (
@@ -33,7 +34,18 @@ function Sponsors() {
             </a>
           </div>
 
-          <div className="border border-custom-yellow rounded-[15px] p-6 h-14 md:h-18 w-full"></div>
+          <div className="border border-custom-yellow rounded-[15px] p-6 h-32 md:h-40 w-full flex items-center justify-center gap-16 md:gap-40">
+            <img
+              src={cetaaUAE}
+              alt="CETA UAE LOGO"
+              className="max-h-20 md:max-h-32 object-contain"
+            />
+            <img
+              src={cetaaDC}
+              alt="CETAA DC LOGO"
+              className="max-h-16 md:max-h-28 object-contain"
+            />
+          </div>
         </div>
 
         {/* Community Partners Section */}
