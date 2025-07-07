@@ -6,7 +6,7 @@ const Countdown = () => {
 
   const calculateTimeLeft = () => {
     const targetDate = new Date(
-      "July 25, " + new Date().getFullYear() + " 17:30:00"
+      "July 25, " + new Date().getFullYear() + " 16:30:00"
     );
     const now = new Date();
     const difference = targetDate - now;
