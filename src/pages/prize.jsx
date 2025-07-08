@@ -1,11 +1,26 @@
+import React, { useState } from "react";
 import first from "../assets/1.png";
 import second from "../assets/2.png";
 import third from "../assets/3.png";
-import gift1 from "../assets/gift1.png";
-import gift2 from "../assets/gift2.png";
 import gift from "../assets/Gifts.png";
 
+const isMobile = () => window.innerWidth < 768;
+
 const Prize = () => {
+  // Track animation state for each prize on mobile
+  const [animated, setAnimated] = useState({
+    first: false,
+    second: false,
+    third: false,
+  });
+
+  // Handler for mobile tap
+  const handleMobileAnimate = (key) => {
+    if (isMobile()) {
+      setAnimated((prev) => ({ ...prev, [key]: !prev[key] }));
+    }
+  };
+
   return (
     <div className="bg-custom-black border-custom-gray border-t border-b flex flex-col gap-y-9 items-center justify-start min-h-screen pt-12 pb-12 w-full max-w-[1250px] 2xl:max-w-[1700px] mx-auto">
       <div className="text-custom-yellow font-seasons_r text-7xl md:text-8xl">
@@ -16,14 +31,23 @@ const Prize = () => {
 
       {/* Flex container for prizes */}
       <div className="flex flex-wrap border-custom-gray md:border-t md:border-b md:flex-nowrap items-center justify-center md:h-[800px] w-full">
-        {/* SECOND PRIZE - Always first in nowrap, moves to second in wrap */}
+        {/* SECOND PRIZE */}
         <div className="h-full order-2 md:order-1 pb-6 px-5 flex flex-col items-center justify-center space-y-3 md:space-y-7">
           <img
             src={second}
             alt="second"
-            className="mt-10 drop-shadow-[0_0_50px_rgba(122,114,111,0.8)] 
-             hover:-translate-y-3 transition-all duration-700 
-             hover:drop-shadow-[0_0_150px_rgba(122,114,111,1)]"
+            onClick={() => handleMobileAnimate("second")}
+            className={`
+              mt-10 drop-shadow-[0_0_50px_rgba(122,114,111,0.8)]
+              transition-all duration-700
+              md:hover:-translate-y-3 md:hover:drop-shadow-[0_0_150px_rgba(122,114,111,1)]
+              ${
+                animated.second && isMobile()
+                  ? "-translate-y-3 drop-shadow-[0_0_150px_rgba(122,114,111,1)]"
+                  : ""
+              }
+            `}
+            style={{ cursor: isMobile() ? "pointer" : "auto" }}
           />
           <div className="font-seasons_r text-custom-white text-3xl md:text-5xl">
             SECOND
@@ -33,14 +57,23 @@ const Prize = () => {
           </div>
         </div>
 
-        {/* FIRST PRIZE - Moves to first position in wrap, middle in nowrap */}
+        {/* FIRST PRIZE */}
         <div className="h-full order-1 md:order-2 border-custom-gray md:border-l md:border-r pb-6 px-5 flex flex-col items-center justify-center space-y-3 md:space-y-7">
           <img
             src={first}
             alt="first"
-            className="md:-mt-10 drop-shadow-[0_0_40px_rgba(215,159,24,0.8)] 
-             hover:-translate-y-3 transition-all duration-700 
-             hover:drop-shadow-[0_0_150px_rgba(215,159,24,1)]"
+            onClick={() => handleMobileAnimate("first")}
+            className={`
+              md:-mt-10 drop-shadow-[0_0_40px_rgba(215,159,24,0.8)]
+              transition-all duration-700
+              md:hover:-translate-y-3 md:hover:drop-shadow-[0_0_150px_rgba(215,159,24,1)]
+              ${
+                animated.first && isMobile()
+                  ? "-translate-y-3 drop-shadow-[0_0_150px_rgba(215,159,24,1)]"
+                  : ""
+              }
+            `}
+            style={{ cursor: isMobile() ? "pointer" : "auto" }}
           />
           <div className="font-seasons_r text-custom-white text-3xl md:text-5xl">
             FIRST
@@ -50,13 +83,23 @@ const Prize = () => {
           </div>
         </div>
 
-        {/* THIRD PRIZE - Always last */}
+        {/* THIRD PRIZE */}
         <div className="h-full order-3 md:order-3 border-custom-gray pb-6 flex flex-col items-center justify-center space-y-3 md:space-y-7">
           <img
             src={third}
-            className="mt-10 drop-shadow-[0_0_30px_rgba(118,53,37,1)] 
-                            hover:drop-shadow-[0_0_150px_rgba(255,0,0,0.8)] 
-                            transition-all duration-700 ease-in-out"
+            alt="third"
+            onClick={() => handleMobileAnimate("third")}
+            className={`
+              mt-10 drop-shadow-[0_0_30px_rgba(118,53,37,1)]
+              transition-all duration-700 ease-in-out
+              md:hover:drop-shadow-[0_0_150px_rgba(255,0,0,0.8)] md:hover:-translate-y-3
+              ${
+                animated.third && isMobile()
+                  ? "-translate-y-3 drop-shadow-[0_0_150px_rgba(255,0,0,0.8)]"
+                  : ""
+              }
+            `}
+            style={{ cursor: isMobile() ? "pointer" : "auto" }}
           />
           <div className="font-seasons_r text-custom-white text-3xl md:text-5xl">
             THIRD
