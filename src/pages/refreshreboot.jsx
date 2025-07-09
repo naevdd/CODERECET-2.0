@@ -3,24 +3,36 @@ import refreshImage from "../assets/refresh.png";
 
 export default function RefreshReboot() {
   return (
-    <div className="flex flex-col min-h-screen md:flex-row items-center border-custom-gray border-t border-b  bg-custom-black text-white p-4 md:p-10">
+    <div className="flex flex-col xl:flex-row min-h-screen bg-custom-black text-custom-white border-custom-gray border-t border-b xl:items-stretch">
       {/* Left Side - Image */}
-      <div className="md:w-1/2 w-full">
-        <img
-          src={refreshImage}
-          alt="Hackathon"
-          className="w-[600px] h-auto mr-0"
-        />
+      <div className="ww-full xl:w-1/2 flex items-center justify-center p-4 xl:p-8">
+        <div className="w-full h-full rounded-lg overflow-hidden p-2 bg-custom-black">
+          <img
+            src={refreshImage}
+            alt="Hackathon"
+            className="w-full h-full object-cover rounded-lg"
+          />
+        </div>
       </div>
 
+      <div
+        className="hidden xl:block"
+        style={{
+          width: "1px",
+          backgroundColor: "#9C9C9C",
+          minHeight: "100%",
+          alignSelf: "stretch",
+        }}
+      ></div>
+
       {/* Right Side - Text Content */}
-      <div className="md:w-1/2 w-full pt-8 ml-0 mt-0">
-        <h1 className="text-white z-10 font-seasons_r text-5xl text-left mt-0 ">
+      <div className="w-full xl:w-1/2 flex flex-col justify-center p-4 xl:p-10">
+        <h1 className="text-custom-white font-seasons_r text-[31px] lg:text-[48px] text-lef mb-6 ">
           REFRESH <span style={{ color: "#C88D28" }}>IDEAS</span>.
           <br />
           REBOOT <span style={{ color: "#C88D28" }}>SOLUTIONS</span>.
         </h1>
-        <p className="mt-6 text-gray-300 rounded-2xl text-s font-satoshi_v ">
+        <p className="text-custom-white mb-4 text-[18px] sm:text-[20px] font-satoshi_v ">
           Great innovations start with fresh ideas. At{" "}
           <span>CodeRecet 2.0</span>, we challenge you to think beyond limits,
           break conventional patterns, and build solutions that create an
@@ -30,14 +42,14 @@ export default function RefreshReboot() {
           or an experienced coder, this is your platform to experiment, learn,
           and push boundaries.{" "}
         </p>
-        <p className="mt-6 text-gray-300 rounded-2xl text-s font-satoshi_v">
+        <p className="text-custom-white mb-4 text-[18px] sm:text-[20px] font-satoshi_v">
           <span>Rebooting solutions</span> means improving, adapting, and
           innovating with the latest technology. Here, creativity meets
           problem-solving as teams work on cutting-edge projects, tackle
           challenges, and turn ambitious ideas into functional solutions. It’s
           your chance to redefine what’s possible.{" "}
         </p>
-        <p className="mt-6 text-gray-300 rounded-2xl text-s font-satoshi_v">
+        <p className="text-custom-white text-[18px] sm:text-[20px] font-satoshi_v">
           The future is built by those who dare to innovate.{" "}
           <span>Are you ready to refresh ideas and reboot the world?</span> Join{" "}
           <span>CodeRecet 2.0</span> and be part of something extraordinary!{" "}
