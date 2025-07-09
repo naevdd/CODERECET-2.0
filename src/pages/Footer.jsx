@@ -95,8 +95,8 @@ function Footer() {
                     48128
                   </div>
                   <div>
-                    <span className="font-semibold">Ananthu:</span> +91 94479
-                    63228
+                    <span className="font-semibold">Ananthu:</span> +91 97611
+                    74092
                   </div>
                 </div>
               )}
